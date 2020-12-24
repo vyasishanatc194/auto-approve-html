@@ -1,0 +1,352 @@
+.main-banner-section {
+  padding: 100px 0 0 0;
+  margin: 0;
+  position: relative;
+  background: url(../images/background/home-banner.svg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 700px;
+}
+
+.main-banner-section .banner-div {
+  padding: 70px 0;
+  margin: 0;
+  position: relative;
+  height: auto;
+  min-height: calc(100vh - 100px);
+  z-index: 99;
+}
+
+.main-banner-section .content-banner-root {
+  padding: 110px 0 50px 0;
+  margin: 0;
+  position: relative;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.main-banner-section .content-banner-root .text-content {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1010px;
+}
+
+.main-banner-section .content-banner-root .text-content h4 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5230a2;
+  margin: 0 0 5px 0;
+}
+
+.main-banner-section .content-banner-root .text-content h1 {
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.3;
+  text-align: center;
+  color: #181a1d;
+  margin: 0 0 5px 0;
+}
+
+.main-banner-section .content-banner-root .text-content h1 .span-color {
+  display: block;
+  font-weight: 700;
+  color: #4de0b7;
+}
+
+.main-banner-section .content-banner-root .text-content p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 35px;
+  text-align: center;
+  color: #181a1d;
+  margin: 0 0 10px 0;
+}
+
+.main-banner-section .content-banner-root .text-content .btn-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 0 0 0;
+  font-family: "Typo Grotesk", sans-serif;
+}
+
+.main-banner-section .content-banner-root .block {
+  display: block;
+}
+
+.custom-section-01 {
+  padding: 90px 0;
+  margin: 0;
+  position: relative;
+  background: #f9f8fb;
+}
+
+.custom-section-01 .heading-div {
+  max-width: 805px;
+}
+
+.custom-section-01 .heading-div h2 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.3;
+  text-align: center;
+  color: #181a1d;
+  display: block;
+}
+
+.custom-section-01 .card-custom-painless {
+  position: relative;
+}
+
+.custom-section-01 .card-custom-painless .card-custom-painless-inner .img-div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 180px;
+}
+
+.custom-section-01 .card-custom-painless .card-custom-painless-inner .text-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.custom-section-01 .card-custom-painless .card-custom-painless-inner .text-div h4 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.3;
+  margin: 0 0 5px 0;
+  text-align: center;
+  color: #200a52;
+}
+
+.custom-section-01 .card-custom-painless .card-custom-painless-inner .text-div p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #898a8d;
+  text-align: center;
+  margin: 0;
+  display: block;
+}
+
+.custom-section-01 .btn-div {
+  margin: 0 0 0 0;
+  padding: 10px 0 0 0;
+}
+
+.custom-section-02 {
+  padding: 90px 0 40px 0;
+  margin: 0;
+  position: relative;
+}
+
+.custom-section-02 .heading-div {
+  max-width: 720px;
+  padding: 0 0 20px 0;
+}
+
+.custom-section-02 .heading-div h2 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.3;
+  text-align: center;
+  color: #181a1d;
+  display: block;
+  margin: 0 0 15px 0;
+}
+
+.custom-section-02 .heading-div p {
+  font-size: 21px;
+  line-height: 1.4;
+  text-align: center;
+  color: #181a1d;
+  display: block;
+}
+
+.custom-section-02 .card-custom-product-money {
+  position: relative;
+}
+
+.custom-section-02 .card-custom-product-money .card-custom-painless-inner .title-div {
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.custom-section-02 .card-custom-product-money .card-custom-painless-inner .title-div h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.3;
+  margin: 0 0 5px 0;
+  text-align: center;
+  color: #200a52;
+}
+
+.custom-section-02 .card-custom-product-money .card-custom-painless-inner .img-div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 180px;
+}
+
+.custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div p {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #4f5154;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div .link-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div .link-div .link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #44e0b7;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div .link-div .link:hover {
+  color: #4f5154;
+}
+
+.custom-section-02 .btn-div {
+  margin: 0 0 0 0;
+  padding: 10px 0 0 0;
+}
+
+.custom-section-03 {
+  padding: 50px 0;
+  margin: 0;
+  position: relative;
+  background: url(../images/background/bg-pattern-01.svg) no-repeat;
+  background-size: 430px;
+  background-position: left bottom;
+}
+
+.custom-section-03 .heading-div {
+  max-width: 805px;
+}
+
+.custom-section-03 .heading-div h2 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.3;
+  text-align: center;
+  color: #181a1d;
+  display: block;
+}
+
+.custom-section-03 .card-custom-approve {
+  position: relative;
+}
+
+.custom-section-03 .card-custom-approve .card-custom-approve-inner .img-div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 180px;
+}
+
+.custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div h4 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+  text-align: center;
+  color: #200a52;
+}
+
+.custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4f5154;
+  text-align: center;
+  margin: 0;
+  display: block;
+}
+
+.custom-section-03 .btn-div {
+  margin: 0 0 0 0;
+  padding: 10px 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .main-banner-section {
+    padding: 70px 0 0 0;
+    min-height: 580px;
+    background-size: contain;
+    background-position: bottom;
+  }
+  .main-banner-section .banner-div {
+    padding: 0;
+    margin: 0;
+    min-height: auto;
+  }
+  .main-banner-section .content-banner-root {
+    padding: 50px 0 40px 0;
+  }
+  .main-banner-section .content-banner-root .text-content {
+    padding: 0 8px;
+  }
+  .main-banner-section .content-banner-root .text-content h4 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+  .main-banner-section .content-banner-root .text-content h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+  }
+  .main-banner-section .content-banner-root .text-content h1 .span-color {
+    display: inline-block;
+  }
+  .main-banner-section .content-banner-root .text-content p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+}
+/*# sourceMappingURL=home-style.css.map */
