@@ -1,18 +1,21 @@
-var rangeSlider = function () {
-  var slider = $(".range-slider"),
-    range = $(".range-slider__range"),
-    value = $(".range-slider__value");
+$(function () {
+  const cssClasses = [
+    "rangeslider--is-lowest-value",
+    "rangeslider--is-highest-value",
+  ];
 
-  slider.each(function () {
-    value.each(function () {
-      var value = $(this).prev().attr("value");
-      $(this).html(value);
+  $("input[type=range]")
+    .rangeslider({
+      polyfill: false,
+    })
+    .on("input", function () {
+      const fraction = (this.value - this.min) / (this.max - this.min);
+      if (fraction === 0) {
+        this.nextSibling.classList.add(cssClasses[0]);
+      } else if (fraction === 1) {
+        this.nextSibling.classList.add(cssClasses[1]);
+      } else {
+        this.nextSibling.classList.remove(...cssClasses);
+      }
     });
-
-    range.on("input", function () {
-      $(this).next(value).html(this.value);
-    });
-  });
-};
-
-rangeSlider();
+});

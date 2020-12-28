@@ -17,6 +17,7 @@
 <link href="assets/css/tailwind.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/fonts/ubuntu-font/ubuntu-font.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/fonts/typo-grotesk/typo-grotesk-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/rangeslider.min.css" media="all" rel="stylesheet" type="text/css">
 <link href="assets/css/range-custom-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/footer.css" media="all" rel="stylesheet" type="text/css" />
@@ -117,10 +118,6 @@
                       <a href="#" class="btn btn-primary">Get your quote in minutes</a>
                     </div>
                   </div>
-
-                  <div class="">
-
-                  </div>
                 </div>
                 
               </div>  
@@ -206,6 +203,9 @@
                       <div class="text-number"> <h3><sup>$</sup> <span class="text">20,000</span> </h3> </div>
                       
                       <div class="slider-box slider-box-custom">
+
+                        <input type="range" min="10" max="50" class="range-slider-input" />
+
                         <div class="range-slider-txt-row">
                           <span class="range-slider-left-txt">$0</span> 
                           <span class="range-slider-right-txt">$ 2 million</span> 
@@ -218,6 +218,7 @@
                       <div class="text-number"> <h3> <span class="txt">6</span> <span class="text-small">months</span> </h3> </div>
                       
                       <div class="slider-box slider-box-custom">
+                        <input type="range" min="10" max="50" class="range-slider-input" />
                         <div class="range-slider-txt-row">
                           <span class="range-slider-left-txt">1 month</span> 
                           <span class="range-slider-right-txt">48 months</span> 
@@ -804,6 +805,7 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
+<script src='assets/js/rangeslider.min.js'></script>
 <script src='assets/js/range-slider.js'></script>
 <script src="assets/js/jquery.collapsable.js"></script> 
 <script src="assets/js/custom.js"></script> 
