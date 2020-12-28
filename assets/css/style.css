@@ -412,6 +412,12 @@ body {
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .chat-screen-boat-div {
+    right: 36px;
+  }
+}
+
 @media (max-width: 767px) {
   body {
     overflow-x: hidden;
@@ -440,6 +446,10 @@ body {
   .px-24-xs {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  .chat-screen-boat-div {
+    right: 24px;
+    bottom: 24px;
   }
 }
 
@@ -492,6 +502,10 @@ body {
   .position-fixed-remove .slideInDown {
     -webkit-animation: none;
             animation: none;
+  }
+  .chat-screen-boat-div {
+    right: 30px;
+    bottom: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

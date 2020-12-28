@@ -217,6 +217,16 @@
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1290px) {
+  .footer-div {
+    .footer-bottom-div {
+      .social-media-div {
+        padding: 0 60px 0 0;
+      }
+    }
+  }
+}
+
 @media (min-width: 1025px) {
   .footer-div {
     .footer-middle-div {
@@ -358,6 +368,16 @@
           ul.title-list-ul {
             margin: 44px 0 0 0;
           }
+        }
+      }
+    }
+
+    .footer-bottom-div {
+      .social-media-div {
+        justify-content: flex-start;
+
+        ul.social-media-ul {
+          justify-content: flex-start;
         }
       }
     }
