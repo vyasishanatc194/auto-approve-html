@@ -17,7 +17,9 @@
 <link href="assets/css/tailwind.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/fonts/ubuntu-font/ubuntu-font.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/fonts/typo-grotesk/typo-grotesk-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/range-custom-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/footer.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/home-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
@@ -115,6 +117,10 @@
                       <a href="#" class="btn btn-primary">Get your quote in minutes</a>
                     </div>
                   </div>
+
+                  <div class="">
+
+                  </div>
                 </div>
                 
               </div>  
@@ -126,7 +132,7 @@
     </section>
 
     <section class="custom-section-01 py-20 xl:bg-contain bg-top bg-no-repeat">
-      <div class="container container-1170 px-4 mx-auto">
+      <div class="container container-1170 px-4 mx-auto px-24-xs">
 
         <div class="heading-div mx-auto mb-12 text-center">
           <h2>We Make Refinancing Painless. Just 3 Easy Steps. </h2>
@@ -134,11 +140,11 @@
 
         <div class="flex flex-wrap -mx-3 mb-6">
 
-          <div class="card-custom-painless w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+          <div class="card-custom-painless w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
             <div class="card-custom-painless-inner">
               <div class="p-4">
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/character/character-image-01.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/character/character-image-01.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <h4>Get a quote in minutes</h4>
@@ -148,11 +154,11 @@
             </div>
           </div>
 
-          <div class="card-custom-painless w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+          <div class="card-custom-painless w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
             <div class="card-custom-painless-inner">
               <div class="p-4">
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/character/character-image-02.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/character/character-image-02.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <h4>We'll work with banks and credit unions to get you the best rate </h4>
@@ -161,11 +167,11 @@
             </div>
           </div>
 
-          <div class="card-custom-painless w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+          <div class="card-custom-painless w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
             <div class="card-custom-painless-inner">
               <div class="p-4">
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/character/character-image-03.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/character/character-image-03.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <h4>We help complete your refi and handle the paperwork</h4>
@@ -181,8 +187,95 @@
       </div>
     </section>
 
+    <section class="calculate-custom-section py-20 xl:bg-contain bg-top bg-no-repeat">
+      <div class="container container-1170 px-4 mx-auto px-24-xs">
+        <div class="calculate-custom-div">
+          <div class="center-container">
+            <div class="heading-div mb-5">
+              <h2>Calculate your savings</h2>
+            </div>
+
+            <div class="flex flex-wrap -mx-3 mb-6">
+
+              <div class="card-custom-calculate w-full md:w-1/2 lg:w-1/2 px-3 mb-6">
+                <div class="card-custom-calculate-inner">
+                  
+                  <div class="form-calculate-div">
+                    <div class="form-calculate-box">
+                      <p>Loan Amount</p>  
+                      <div class="text-number"> <h3><sup>$</sup> <span class="text">20,000</span> </h3> </div>
+                      
+                      <div class="slider-box slider-box-custom">
+                        <div class="range-slider-txt-row">
+                          <span class="range-slider-left-txt">$0</span> 
+                          <span class="range-slider-right-txt">$ 2 million</span> 
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-calculate-box">
+                      <p>Loan Term</p>  
+                      <div class="text-number"> <h3> <span class="txt">6</span> <span class="text-small">months</span> </h3> </div>
+                      
+                      <div class="slider-box slider-box-custom">
+                        <div class="range-slider-txt-row">
+                          <span class="range-slider-left-txt">1 month</span> 
+                          <span class="range-slider-right-txt">48 months</span> 
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-wrap -mx-1 mb-6">
+                      
+                      <div class="form-col w-full md:w-1/2 lg:w-1/2 sm:1/2 xs-6 px-1 mb-1">
+                        <div class="form-group pr-4">
+                          <label class="block text-color mb-3" for="">Current Rate (APR)</label>
+                          <div class="form-control-row">
+                            <input class="form-control appearance-none w-full rounded outline-none" type="text" name="field-name" placeholder="" value="10">
+                            <div class="text-right-per absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">%</div>
+                          </div>
+                        </div>
+                      </div>    
+
+                      <div class="form-col w-full md:w-1/2 lg:w-1/2 xs-6 px-1 mb-1">
+                        <div class="form-group pl-4">
+                          <label class="block text-color mb-3" for="">New Rate (APR)</label>
+                          <div class="form-control-row">
+                            <input class="form-control appearance-none w-full rounded outline-none" type="text" name="field-name" placeholder="" value="10">
+                            <div class="text-right-per absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">%</div>
+                          </div>
+                        </div>
+                      </div>    
+
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="card-custom-save w-full md:w-1/2 lg:w-1/2 px-3 mb-6">
+                <div class="card-custom-save-inner">
+                  <div class="card-white-rounded">
+                    <p>You could save</p>
+                    <h2 class="big-text">$4,515</h2>
+                    <div class="text-color-div">
+                      <p>In Interest</p>
+                    </div>
+                  </div>
+                  <div class="flex btn-up-div">
+                    <a href="#" class="btn btn-primary btn-big">Start saving today</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="custom-section-02 py-20 xl:bg-contain bg-top bg-no-repeat">
-      <div class="container container-1170 px-4 mx-auto">
+      <div class="container container-1170 px-4 mx-auto px-22-xs">
 
         <div class="heading-div mx-auto mb-12 text-center">
           <h2>The right product to save <span class="block"> you money.</span> </h2>
@@ -191,14 +284,14 @@
 
         <div class="flex flex-wrap -mx-3 mb-6">
 
-          <div class="card-custom-product-money w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+          <div class="card-custom-product-money w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
             <div class="card-custom-painless-inner">
               <div class="p-4">
                 <div class="title-div">
                   <h3>Auto Refinance</h3>
                 </div>
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/character/character-image-pro-01.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/character/character-image-pro-01.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <p>At vero eos et accusamus et iusto.</p>
@@ -210,14 +303,14 @@
             </div>
           </div>
 
-          <div class="card-custom-product-money w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+          <div class="card-custom-product-money w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
             <div class="card-custom-painless-inner">
               <div class="p-4">
                 <div class="title-div">
                   <h3>Auto Lease Purchase</h3>
                 </div>
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/character/character-image-pro-02.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/character/character-image-pro-02.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <p>At vero eos et accusamus et iusto.</p>
@@ -229,14 +322,14 @@
             </div>
           </div>
 
-          <div class="card-custom-product-money w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+          <div class="card-custom-product-money w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
             <div class="card-custom-painless-inner">
               <div class="p-4">
                 <div class="title-div">
                   <h3>Motorcycle Refinance</h3>
                 </div>
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/character/character-image-pro-03.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/character/character-image-pro-03.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <p>At vero eos et accusamus et iusto.</p>
@@ -254,7 +347,7 @@
     </section>
 
     <section class="custom-section-03 py-20 xl:bg-contain bg-top bg-no-repeat">
-      <div class="container container-1170 px-4 mx-auto">
+      <div class="container container-1170 px-4 mx-auto ">
 
         <div class="heading-div mx-auto mb-12 text-center">
           <h2>Why Auto Approve?</h2>
@@ -266,7 +359,7 @@
             <div class="card-custom-approve-inner">
               <div class="p-4">
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/icons/icon-01.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/icons/icon-01.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <h4>It’s time to make a change.</h4>
@@ -280,7 +373,7 @@
             <div class="card-custom-approve-inner">
               <div class="p-4">
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/icons/icon-02.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/icons/icon-02.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <h4>Our customers love us.</h4>
@@ -294,7 +387,7 @@
             <div class="card-custom-approve-inner">
               <div class="p-4">
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/icons/icon-03.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/icons/icon-03.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <h4>The personalized service you deserve.</h4>
@@ -308,7 +401,7 @@
             <div class="card-custom-approve-inner">
               <div class="p-4">
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/icons/icon-04.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/icons/icon-04.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <h4>The deal that’s right for you.</h4>
@@ -322,7 +415,7 @@
             <div class="card-custom-approve-inner">
               <div class="p-4">
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/icons/icon-05.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/icons/icon-05.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <h4>No upselling. Ever.</h4>
@@ -336,7 +429,7 @@
             <div class="card-custom-approve-inner">
               <div class="p-4">
                 <div class="img-div flex items-center mb-7">
-                  <img class="object-contain" src="assets/images/icons/icon-06.svg" alt="img" class="w-full img-fluid" />
+                  <img src="assets/images/icons/icon-06.svg" alt="img" class="img-fluid object-contain" />
                 </div>
                 <div class="text-div">
                   <h4>More money in your pocket.</h4>
@@ -351,15 +444,376 @@
       </div>
     </section>
 
+    <section class="customers-reviews-section py-20 xl:bg-contain bg-top bg-no-repeat">
+      <div class="container container-1170 px-4 mx-auto px-24-xs">
+
+        <div class="heading-div mx-auto mb-16 w-full text-center">
+          <h2>Real Customers. Real Reviews. <img src="assets/images/icons/custom/smile-icon.svg" class="img-fluid img-icon" alt="img" /> </h2>
+        </div>
+
+        <div class="flex flex-wrap -mx-3 mb-12">
+
+          <div class="card-custom-customers-reviews w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
+            <div class="card-custom-customers-reviews-inner">
+              <div class="card-custom-top">
+                <div class="left-text-div">
+                  <div class="img-div flex">
+                    <img src="assets/images/icons/custom/quote-left-icon.svg" alt="img" class="object-contain img-quote" />
+                  </div>
+                  <div class="left-user-div">
+                    <h5>Full Name</h5>
+                    <p>jjackyliang</p>
+                  </div>
+                </div>
+                <div class="img-right-div flex">
+                  <img src="assets/images/google.png" alt="img" class="object-contain img-fluid" />
+                </div>
+              </div>
+              
+              <div class="text-desc-div">
+                <p>Amet minim mollit non deserunt ullamco est aliqua dolor do amet sint Velit officia consequa.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-custom-customers-reviews w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
+            <div class="card-custom-customers-reviews-inner">
+              <div class="card-custom-top">
+                <div class="left-text-div">
+                  <div class="img-div flex">
+                    <img src="assets/images/icons/custom/quote-left-icon.svg" alt="img" class="object-contain img-quote" />
+                  </div>
+                  <div class="left-user-div">
+                    <h5>Full Name</h5>
+                    <p>jjackyliang</p>
+                  </div>
+                </div>
+                <div class="img-right-div flex">
+                  <img src="assets/images/trustpilot_logo.png" alt="img" class="object-contain img-fluid" />
+                </div>
+              </div>
+              
+              <div class="text-desc-div">
+                <p>Amet minim mollit non deserunt ullamco est aliqua dolor do amet sint Velit officia consequa.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-custom-customers-reviews w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
+            <div class="card-custom-customers-reviews-inner">
+              <div class="card-custom-top">
+                <div class="left-text-div">
+                  <div class="img-div flex">
+                    <img src="assets/images/icons/custom/quote-left-icon.svg" alt="img" class="object-contain img-quote" />
+                  </div>
+                  <div class="left-user-div">
+                    <h5>Full Name</h5>
+                    <p>jjackyliang</p>
+                  </div>
+                </div>
+                <div class="img-right-div flex">
+                  <img src="assets/images/trustpilot_logo.png" alt="img" class="object-contain img-fluid" />
+                </div>
+              </div>
+              
+              <div class="text-desc-div">
+                <p>Amet minim mollit non deserunt ullamco est aliqua dolor do amet sint Velit officia consequa.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-div flex justify-center text-center">
+          <a href="#" class="btn btn-secondary">Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="custom-resources-section py-20 xl:bg-contain bg-top bg-no-repeat">
+      <div class="container container-1170 px-4 mx-auto px-24-xs">
+
+        <div class="heading-div mx-auto mb-16 w-full text-center">
+          <h2>Resources</h2>
+        </div>
+
+        <div class="flex flex-wrap -mx-3 mb-12">
+
+          <div class="card-custom-resources w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
+            <div class="card-custom-resources-inner" style="background-image: url(assets/images/resources-img-01.png);">
+              <div class="card-custom-top">
+                <div class="left-text-div">
+                  <div class="top-card-resources">
+                    <h6>ARTICLE</h6>
+                  </div>
+                  <div class="middle-card-resources">
+                    <h3><a href="#" class="link">Article Title Goes Right Here</a> </h3>
+                  </div>
+                  <div class="btn-bottom-div">
+                    <a href="#" class="link link-btn"> <span class="bg-custom-icon arrow-right-icon"></span> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-custom-resources w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
+            <div class="card-custom-resources-inner" style="background-image: url(assets/images/resources-img-02.png);">
+              <div class="card-custom-top">
+                <div class="left-text-div">
+                  <div class="top-card-resources">
+                    <h6>ARTICLE</h6>
+                  </div>
+                  <div class="middle-card-resources">
+                    <h3><a href="#" class="link">Article Title Here</a></h3>
+                  </div>
+                  <div class="btn-bottom-div">
+                    <a href="#" class="link link-btn"> <span class="bg-custom-icon arrow-right-icon"></span> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-custom-resources w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
+            <div class="card-custom-resources-inner" style="background-image: url(assets/images/resources-img-03.png);">
+              <div class="card-custom-top">
+                <div class="left-text-div">
+                  <div class="top-card-resources">
+                    <h6>VIDEO</h6>
+                  </div>
+                  <div class="middle-card-resources">
+                    <h3><a href="#" class="link">Video Title Goes Right Here </a> </h3>
+                  </div>
+                  <div class="btn-bottom-div">
+                    <a href="#" class="link link-btn"> <span class="bg-custom-icon video-icon"></span> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-div flex justify-center text-center">
+          <a href="#" class="btn btn-primary btn-primary-big">Resources</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="client-product-section py-20 xl:bg-contain bg-top bg-no-repeat">
+      <div class="container container-1170 px-4 mx-auto px-24-xs">
+
+        <div class="flex flex-wrap -mx-3">
+
+          <div class="card-client-product order-01 left-justify w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
+            <div class="card-client-product-inner">
+              <div class="card-client-product-img">
+                <img src="assets/images/img-01.png" class="img-fluid" alt="img" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-client-product order-02 center-justify w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
+            <div class="card-client-product-inner">
+              <div class="card-client-product-img">
+                <img src="assets/images/img-02.png" class="img-fluid" alt="img" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-client-product order-03 right-justify w-full md:w-1/3 lg:w-1/3 px-3 mb-6">
+            <div class="card-client-product-inner">
+              <div class="card-client-product-img">
+                <img src="assets/images/img-03.png" class="img-fluid" alt="img" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="chat-screen-boat-div">
+      <div class="chat-screen-boat-inner">
+        <div class="chat-screen-boat-top">
+          <a href="#" class="btn-rounded-primary"> <span class="bg-custom-icon chat-icon"></span> </a>
+        </div>    
+      </div>
+    </div>
+
   </div>
+
+  <footer>
+    <div class="footer-div">
+      <div class="container container-1170 px-3 mx-auto px-24-xs">
+        <div class="row">
+          <div class="w-full lg:w-1/1">
+
+            <div class="footer-top-div">
+              <div class="flex flex-wrap -mx-3">
+                <div class="footer-top-left-justify w-full md:w-1/2 lg:w-1/2 px-3 mb-6">
+                  <div class="img-footer-logo-div">
+                    <a href="#" class="footer-logo-link">
+                      <img src="assets/images/logo-white.svg" class="object-fit img-footer-logo" alt="img" />
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-top-right-justify w-full md:w-1/2 lg:w-1/2 px-3 mb-6">
+                  <div class="get-quote-footer-div">
+                    <div class="get-quote-footer-top-div">
+                      <div class="link-div">
+                        <a href="tel:8443363365" class="btn btn-secondary-link">(844) 336-3365</a>
+                      </div>
+                      <div class="btn-div">
+                        <a href="#" class="btn btn-secondary">Get a quote</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-middle-div">
+              <div class="flex flex-wrap -mx-3">
+                
+                <div class="footer-middle-box w-12 w-full md:w-1/5 lg:w-1/5 px-3 mb-6">             
+                  <div class="footer-col-div">
+                    <div id="footer-list-01" class="collapsable collapsable-slide ca-collapsed">
+                      <h5 class="ca-control"> <a href="#">Apps <span class="display-none bg-custom-icon down-arrow-icon"></span> </a> </h5>
+                      <div class="ca-box">
+                        <ul class="list-ul">
+                          <li> <a href="#" class="footer-link">iOS</a> </li>
+                          <li> <a href="#" class="footer-link">Android</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer-middle-box w-20 w-full md:w-1/5 lg:w-1/5 px-3 mb-6">             
+                  <div class="footer-col-div">
+                    <div id="footer-list-01" class="collapsable collapsable-slide ca-collapsed">
+                      <h5 class="ca-control"> <a href="#">Products <span class="display-none bg-custom-icon down-arrow-icon"></span> </a> </h5>
+                      <div class="ca-box">
+                        <ul class="list-ul">
+                          <li> <a href="#" class="footer-link">Vehicle Refinance</a> </li>
+                          <li> <a href="#" class="footer-link">Lease Purchase</a> </li>
+                          <li> <a href="#" class="footer-link">Motorcycle Refinance</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer-middle-box w-24 w-full md:w-1/5 lg:w-1/5 px-3 mb-6">             
+                  <div class="footer-col-div">
+                    <div id="footer-list-01" class="collapsable collapsable-slide ca-collapsed">
+                      <h5 class="ca-control"> <a href="#">Resources <span class="display-none bg-custom-icon down-arrow-icon"></span> </a> </h5>
+                      <div class="ca-box">
+                        <ul class="list-ul">
+                          <li> <a href="#" class="footer-link">Auto Approve Reviews</a> </li>
+                          <li> <a href="#" class="footer-link">Calculators</a> </li>
+                          <li> <a href="#" class="footer-link">Resources</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer-middle-box w-28 w-full md:w-1/5 lg:w-1/5 px-3 mb-6">             
+                  <div class="footer-col-div">
+                    <div id="footer-list-01" class="collapsable collapsable-slide ca-collapsed">
+                      <h5 class="ca-control"> <a href="#">Company <span class="display-none bg-custom-icon down-arrow-icon"></span> </a> </h5>
+                      <div class="ca-box">
+                        <ul class="list-ul list-ul-50">
+                          <li> <a href="#" class="footer-link">About</a> </li>
+                          <li> <a href="#" class="footer-link">Contact Us</a> </li>
+                          <li> <a href="#" class="footer-link">Newsroom</a> </li>
+                          <li> <a href="#" class="footer-link">Legal Stuff</a> </li>
+                          <li> <a href="#" class="footer-link">Join the Team</a> </li>
+                          <li> <a href="#" class="footer-link">Terms of Service</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer-middle-box w-16 w-full md:w-1/5 lg:w-1/5 px-3 mb-6">             
+                  <div class="footer-col-div">
+                    <ul class="title-list-ul">
+                      <li> <a href="#" class="footer-link">FAQ</a> </li>
+                      <li> <a href="#" class="footer-link">Calculators</a> </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="footer-bottom-div">
+              <div class="flex flex-wrap -mx-3">
+                <div class="footer-bottom-left-justify w-full md:w-1/2 lg:w-1/2 px-3 mb-6">
+                  
+                  <div class="newsletter-box-group">
+                    <div class="input-group-div">
+                      <input type="text" class="form-control" placeholder="Sign up for our newsletter" />
+                      <button class="btn-submit-arrow"> <span class="bg-custom-icon arrow-right-long"></span> </button>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="footer-bottom-right-justify w-full md:w-1/2 lg:w-1/2 px-3 mb-6">
+
+                  <div class="social-media-div">
+                    <ul class="social-media-ul">
+                      <li>
+                        <a href="#" class="social-link">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="social-link">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="social-link">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="social-link">
+                          <i class="fab fa-pinterest"></i>
+                        </a>
+                      </li>
+                    </ul>
+  
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </div><!-- end of wrapper -->
 
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
-<!-- <script src="assets/js/bootstrap.min.js"></script> -->
+<script src='assets/js/range-slider.js'></script>
+<script src="assets/js/jquery.collapsable.js"></script> 
 <script src="assets/js/custom.js"></script> 
+
+<script>
+  $('.collapsable-slide').collapsable({
+    fx: 'slide',
+    fxDuration: 300
+  });
+</script>
 
 </body>
 </html>
