@@ -349,6 +349,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .footer-div {
+    padding: 24px 0 14px 0;
+  }
   .footer-div .footer-middle-div .footer-middle-box {
     width: 33.3%;
   }
