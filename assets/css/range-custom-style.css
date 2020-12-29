@@ -34,7 +34,7 @@
   border: 2px solid #5230a2;
 }
 
-.slider-box-custom .rangeslider__handle:after {
+.slider-box-custom .rangeslider__handle::after {
   background: transparent;
   background-image: none;
   -webkit-box-shadow: none;
