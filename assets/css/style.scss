@@ -93,6 +93,42 @@
   }
 }
 
+.btn-pre-back {
+  background: #f4f4f4;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #5230a2;
+  letter-spacing: 0;
+  min-height: 44px;
+  padding: 9px 32px 7px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 27px;
+  font-family: "Typo Grotesk", sans-serif;
+  transition: all 0.8s;
+
+  .bg-custom-icon {
+    margin: 0 15px 0 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: #5230a2;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+    outline: none;
+  }
+
+  &.disabled {
+    opacity: 0.39;
+  }
+
+  &.btn-primary-big {
+    min-height: 56px;
+  }
+}
+
 .btn-secondary {
   background: #44e0b7;
   font-weight: 700;
@@ -138,6 +174,10 @@
   &:focus {
     color: #5230a2;
   }
+}
+
+.min-h48 {
+  min-height: 48px;
 }
 
 .checkbox-radio-box-div {
