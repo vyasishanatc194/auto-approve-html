@@ -1,46 +1,33 @@
 .footer-div {
   padding: 44px 0 24px 0;
-  margin: 0;
-  position: relative;
-  background: #200a52;
+  @apply bg-blue-dark relative m-0;
 
   .footer-top-div {
     padding: 46px 0 20px 0;
-    margin: 0;
-    position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+    @apply relative m-0;
 
     .footer-top-left-justify {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
+      @apply flex flex-wrap items-center;
     }
 
     .img-footer-logo-div {
-      padding: 0;
-      margin: 0;
-      position: relative;
+      @apply p-0 m-0 relative;
     }
 
     .get-quote-footer-div {
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
+      @apply flex justify-end flex-wrap;
 
       .get-quote-footer-top-div {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+        @apply flex flex-wrap items-center;
 
         .link-div {
           .btn.btn-secondary-link {
-            font-weight: 700;
             font-size: 16px;
             line-height: 20px;
-            text-align: right;
             letter-spacing: 0.04em;
-            color: #44e0b7;
             margin: 0 40px 0 0;
+            @apply font-bold text-right text-green;
           }
         }
       }
@@ -49,9 +36,8 @@
 
   .footer-middle-div {
     padding: 45px 0 15px 0;
-    margin: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.11);
-    position: relative;
+    @apply m-0 relative;
 
     .w-12 {
       width: 12%;
@@ -77,17 +63,14 @@
       .footer-col-div {
         .collapsable {
           h5 {
-            font-weight: 700;
             font-size: 21px;
             line-height: 30px;
             margin: 0 0 16px 0;
             letter-spacing: 0.04em;
-            text-transform: capitalize;
-            color: #fff;
-            pointer-events: none;
+            @apply font-bold text-white capitalize pointer-events-none;
 
             .display-none {
-              display: none;
+              @apply hidden;
             }
           }
 
@@ -96,17 +79,13 @@
               margin: 0 0 10px 0;
 
               .footer-link {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                color: #fff;
+                @apply font-normal text-base text-white;
               }
             }
           }
 
           .list-ul-50 {
-            display: flex;
-            flex-wrap: wrap;
+            @apply flex flex-wrap;
 
             li {
               width: 50%;
@@ -116,14 +95,11 @@
 
         .title-list-ul {
           .footer-link {
-            font-weight: 700;
             font-size: 21px;
             line-height: 30px;
             margin: 0 0 12px 0;
             letter-spacing: 0.04em;
-            text-transform: capitalize;
-            color: #fff;
-            display: block;
+            @apply font-bold text-white capitalize block;
           }
         }
       }
@@ -132,83 +108,66 @@
 
   .footer-bottom-div {
     padding: 40px 0 0 0;
-    margin: 0;
-    position: relative;
+    @apply m-0 relative;
 
     .newsletter-box-group {
-      position: relative;
+      @apply relative;
 
       .input-group-div {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
         max-width: 375px;
-        position: relative;
+        @apply flex flex-wrap w-full relative;
 
         .form-control {
-          width: 100%;
           height: 52px;
-          background: #140539;
           border-radius: 39px;
           padding: 10px 55px 10px 30px;
-          color: #fff;
           font-size: 16px;
           line-height: 20px;
-          font-weight: 400;
           outline: none;
-          box-shadow: none;
+          @apply w-full text-white font-normal relative bg-blue-color2 shadow-none;
 
           &::-webkit-input-placeholder {
-            color: #fff;
+            @apply text-white;
           }
 
           &::-moz-placeholder {
-            color: #fff;
+            @apply text-white;
           }
 
           &:-ms-input-placeholder {
-            color: #fff;
+            @apply text-white;
           }
 
           &:-moz-placeholder {
-            color: #fff;
+            @apply text-white;
           }
         }
 
         .btn-submit-arrow {
-          position: absolute;
-          top: 0;
-          right: 0;
           height: 52px;
           width: 52px;
           padding: 0 10px 0 0;
+          @apply absolute top-0 right-0;
         }
       }
     }
 
     .social-media-div {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      height: 100%;
+      @apply flex justify-end items-center h-full;
 
       ul.social-media-ul {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
+        @apply flex justify-end w-full;
 
         li {
           padding: 0 10px;
 
           .social-link {
-            color: #44e0b7;
             font-size: 18px;
-            display: flex;
-            align-items: center;
             transition: all 0.8s;
+            @apply text-green flex flex-wrap;
 
             &:hover {
-              color: #fff;
+              @apply text-white;
             }
           }
         }
@@ -254,7 +213,7 @@
       }
 
       .get-quote-footer-div {
-        justify-content: flex-start;
+        @apply justify-start;
 
         .get-quote-footer-top-div {
           .btn-div {
@@ -288,21 +247,17 @@
             h5 {
               margin: 0 0 16px 0;
               pointer-events: auto;
-              position: relative;
+              @apply relative;
 
               a.ca-link {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
+                @apply flex items-center flex-wrap w-full;
               }
 
               .display-none {
-                display: flex;
-                position: absolute;
                 top: 10px;
                 right: 10px;
                 transition: all 0.8s;
+                @apply flex absolute;
               }
             }
 
@@ -336,12 +291,11 @@
       padding: 15px 0 0 0;
 
       .social-media-div {
-        justify-content: flex-start;
-        height: 100%;
         margin: 10px 0 10px 0;
+        @apply justify-start h-full;
 
         ul.social-media-ul {
-          justify-content: flex-start;
+          @apply justify-start;
         }
       }
     }
@@ -376,17 +330,16 @@
 
     .footer-bottom-div {
       .social-media-div {
-        justify-content: flex-start;
+        @apply justify-start;
 
         ul.social-media-ul {
-          justify-content: flex-start;
+          @apply justify-start;
         }
       }
     }
 
     .px-24-xs {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
+      @apply pl-6 pr-6;
     }
   }
 }

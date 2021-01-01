@@ -1,16 +1,13 @@
 .main-half-banner-section {
   padding: 100px 0 0 0;
-  margin: 0;
-  position: relative;
   min-height: 750px;
   z-index: 999;
+  @apply relative m-0;
 
   .half-banner-div {
     padding: 70px 0;
-    margin: 0;
-    position: relative;
-    height: 100%;
     z-index: 99;
+    @apply relative m-0 h-full;
 
     &.auto-refinance-banner-img-01 {
       background: #fff url(../images/background/auto-refinance-banner02.svg) no-repeat;
@@ -33,13 +30,7 @@
 
   .content-banner-root {
     padding: 60px 0 60px 0;
-    margin: 0;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    @apply m-0 relative flex items-center justify-center w-full h-full;
 
     .text-content {
       margin: 0 auto;
@@ -47,72 +38,59 @@
       max-width: 600px;
 
       h4 {
-        font-weight: 700;
         font-size: 21px;
         line-height: 1.5;
         letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #5230a2;
         margin: 0 0 5px 0;
+        @apply text-blue uppercase font-bold;
       }
 
       h1 {
-        font-weight: 400;
         font-size: 58px;
         line-height: 1.3;
-        color: #181a1d;
         margin: 0 0 5px 0;
+        @apply text-custom-color2 font-normal;
 
         .span-color {
-          display: block;
-          font-weight: 700;
-          color: #4de0b7;
+          @apply text-green block font-bold;
         }
       }
 
       p {
-        font-style: normal;
-        font-weight: normal;
         font-size: 21px;
         line-height: 35px;
-        color: #181a1d;
         margin: 0 0 10px 0;
+        @apply text-custom-color2 font-normal not-italic;
       }
 
       .btn-div {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
         margin: 30px 0 0 0;
         font-family: "Typo Grotesk", sans-serif;
+        @apply flex justify-center flex-wrap;
       }
     }
 
     .block {
-      display: block;
+      @apply block;
     }
   }
 }
 
 .saving-today-section {
   padding: 20px 0 40px 0;
-  margin: 0;
-  position: relative;
+  @apply m-0 relative;
 
   .heading-div {
     max-width: 895px;
     padding: 0 0 20px 0;
-    position: relative;
     z-index: 2;
+    @apply relative;
 
     h2 {
-      font-weight: 400;
       font-size: 36px;
       line-height: 1.5;
-      text-align: center;
-      color: #181a1d;
-      display: block;
       margin: 0 0 15px 0;
+      @apply font-normal text-center text-custom-color2 block;
     }
   }
 
