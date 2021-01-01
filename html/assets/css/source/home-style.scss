@@ -1,31 +1,22 @@
 .main-banner-section {
   padding: 100px 0 0 0;
-  margin: 0;
-  position: relative;
   background: #fff url(../images/background/home-banner.svg) no-repeat;
-  background-size: cover;
-  background-position: bottom;
   min-height: 700px;
   z-index: 999;
+  @apply relative m-0 bg-cover bg-bottom;
 
   .banner-div {
     padding: 70px 0;
-    margin: 0;
-    position: relative;
-    height: auto;
     min-height: calc(100vh - 100px);
     z-index: 99;
+    @apply relative m-0 h-auto;
   }
 
   .content-banner-root {
     padding: 110px 0 50px 0;
-    margin: 0;
-    position: relative;
     height: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+
+    @apply relative m-0 flex items-center justify-center w-full;
     // font-family: "Typo Grotesk", sans-serif;
 
     .text-content {
@@ -34,47 +25,35 @@
       max-width: 1010px;
 
       h4 {
-        font-weight: 700;
         font-size: 21px;
         line-height: 1.5;
-        text-align: center;
         letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #5230a2;
         margin: 0 0 5px 0;
+        @apply font-bold text-center uppercase text-blue;
       }
 
       h1 {
-        font-weight: 400;
         font-size: 58px;
         line-height: 1.3;
-        text-align: center;
-        color: #181a1d;
         margin: 0 0 5px 0;
+        @apply text-custom-color2 text-center font-normal;
 
         .span-color {
-          display: block;
-          font-weight: 700;
-          color: #4de0b7;
+          @apply text-green font-bold block;
         }
       }
 
       p {
-        font-style: normal;
-        font-weight: normal;
         font-size: 21px;
         line-height: 35px;
-        text-align: center;
-        color: #181a1d;
         margin: 0 0 10px 0;
+        @apply text-custom-color2 font-normal text-center not-italic;
       }
 
       .btn-div {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
         margin: 30px 0 0 0;
         font-family: "Typo Grotesk", sans-serif;
+        @apply flex flex-wrap justify-center;
       }
     }
 
@@ -86,145 +65,112 @@
 
 .custom-section-01 {
   padding: 90px 0;
-  margin: 0;
-  position: relative;
-  background: #f9f8fb;
+  @apply m-0 relative bg-custom-color3;
 
   .heading-div {
     max-width: 805px;
 
     h2 {
-      font-weight: 400;
       font-size: 50px;
       line-height: 1.3;
-      text-align: center;
-      color: #181a1d;
-      display: block;
+      @apply block text-custom-color2 text-center font-normal;
     }
   }
 
   .card-custom-painless {
-    position: relative;
+    @apply relative;
 
     .card-custom-painless-inner {
       .img-div {
-        justify-content: center;
         min-height: 180px;
+        @apply justify-center;
       }
 
       .text-div {
-        padding: 0;
-        margin: 0;
-        position: relative;
+        @apply p-0 m-0 relative;
 
         h4 {
-          font-weight: 700;
           font-size: 25px;
           line-height: 1.3;
           margin: 0 0 5px 0;
-          text-align: center;
-          color: #200a52;
+          @apply text-blue-dark text-center font-bold;
         }
 
         p {
-          font-size: 16px;
-          line-height: 1.5;
-          color: #898a8d;
-          text-align: center;
-          margin: 0;
-          display: block;
+          @apply text-custom-color5 text-center block m-0 text-base;
         }
       }
     }
   }
 
   .btn-div {
-    margin: 0 0 0 0;
     padding: 10px 0 0 0;
+    @apply m-0;
   }
 }
 
 .custom-section-02 {
   padding: 90px 0 40px 0;
-  margin: 0;
-  position: relative;
+  @apply relative m-0;
 
   .heading-div {
     max-width: 720px;
     padding: 0 0 20px 0;
 
     h2 {
-      font-weight: 400;
       font-size: 50px;
       line-height: 1.3;
-      text-align: center;
-      color: #181a1d;
-      display: block;
       margin: 0 0 15px 0;
+      @apply text-custom-color2 text-center font-normal block;
     }
 
     p {
       font-size: 21px;
       line-height: 1.4;
-      text-align: center;
-      color: #181a1d;
-      display: block;
+      @apply text-custom-color2 text-center block;
     }
   }
 
   .card-custom-product-money {
-    position: relative;
+    @apply relative;
 
     .card-custom-painless-inner {
       .title-div {
-        padding: 0;
         margin: 0 0 15px 0;
+        @apply p-0;
 
         h3 {
-          font-weight: 700;
           font-size: 25px;
           line-height: 1.3;
           margin: 0 0 5px 0;
-          text-align: center;
-          color: #200a52;
+          @apply text-blue-dark text-center font-bold;
         }
       }
 
       .img-div {
-        justify-content: center;
+        @apply justify-center;
         min-height: 180px;
       }
 
       .text-div {
-        padding: 0;
-        margin: 0;
-        position: relative;
+        @apply p-0 m-0 relative;
 
         p {
           font-size: 16px;
           line-height: 1.4;
-          text-align: center;
-          color: #4f5154;
-          display: block;
           margin: 0 0 10px 0;
+          @apply block text-custom-color4 text-center;
         }
 
         .link-div {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-          width: 100%;
+          @apply flex flex-wrap justify-center w-full;
 
           .link {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: center;
-            color: #44e0b7;
             transition: all 0.8s;
+            @apply text-green text-center text-base font-bold;
 
             &:hover {
-              color: #4f5154;
+              @apply text-custom-color4;
             }
           }
         }
@@ -233,89 +179,73 @@
   }
 
   .btn-div {
-    margin: 0 0 0 0;
     padding: 10px 0 0 0;
+    @apply m-0;
   }
 }
 
 .custom-section-03 {
   padding: 50px 0 60px 0;
-  margin: 0;
-  position: relative;
   background: url(../images/background/bg-pattern-01.svg) no-repeat;
   background-size: 450px 590px;
   background-position: left bottom;
+  @apply m-0 relative;
 
   .heading-div {
     max-width: 805px;
 
     h2 {
-      font-weight: 400;
       font-size: 50px;
       line-height: 1.3;
-      text-align: center;
-      color: #181a1d;
-      display: block;
+      @apply text-custom-color2 block text-center font-normal;
     }
   }
 
   .card-custom-approve {
-    position: relative;
+    @apply relative;
 
     .card-custom-approve-inner {
       .img-div {
-        justify-content: center;
         min-height: 180px;
+        @apply justify-center;
       }
 
       .text-div {
-        padding: 0;
-        margin: 0;
-        position: relative;
+        @apply p-0 m-0 relative;
 
         h4 {
-          font-weight: 700;
           font-size: 25px;
           line-height: 1.4;
           margin: 0 0 8px 0;
-          text-align: center;
-          color: #200a52;
+          @apply text-center text-blue-dark font-bold;
         }
 
         p {
-          font-size: 16px;
-          line-height: 1.5;
-          color: #4f5154;
-          text-align: center;
-          margin: 0;
-          display: block;
+          @apply block m-0 text-center text-custom-color4 text-base;
         }
       }
     }
   }
 
   .btn-div {
-    margin: 0 0 0 0;
     padding: 10px 0 0 0;
+    @apply m-0;
   }
 }
 
 .calculate-custom-section {
   padding: 80px 0;
-  margin: 0;
-  position: relative;
+  @apply m-0 relative;
 
   .calculate-custom-div {
     padding: 60px;
-    margin: 0;
-    position: relative;
-    background: #f9f8fb;
     border-radius: 16px;
+    @apply m-0 relative bg-custom-color3;
 
     .center-container {
       max-width: 1000px;
-      width: 100%;
       margin: 0 auto;
+      @apply w-full;
     }
 
     .heading-div {
@@ -323,8 +253,7 @@
         font-size: 36px;
         line-height: 1.3;
         margin: 0 0 10px 0;
-        display: block;
-        color: #181a1d;
+        @apply block text-custom-color2;
       }
     }
 
@@ -335,27 +264,21 @@
 
       .form-calculate-div {
         .form-calculate-box {
-          padding: 0;
-          margin: 0;
-          position: relative;
+          @apply p-0 m-0 relative;
 
           p {
-            font-weight: 700;
             font-size: 12px;
             line-height: 1.4;
-            color: #6948b7;
-            display: block;
             margin: 0 0 5px 0;
+            @apply block text-blue-light font-bold;
           }
 
           .text-number {
             h3 {
-              font-weight: 700;
               font-size: 32px;
               line-height: 1.2;
-              display: block;
-              position: relative;
               color: #254254;
+              @apply block relative font-bold;
 
               sup {
                 font-weight: 700;
@@ -386,7 +309,7 @@
           }
 
           .form-control-row {
-            position: relative;
+            @apply relative;
 
             .text-right-per {
               font-weight: 700;
@@ -436,7 +359,7 @@
           min-height: 56px;
           top: -28px;
           left: 40px;
-          position: relative;
+          @apply relative;
         }
       }
     }
@@ -470,7 +393,7 @@
   }
 
   .card-custom-customers-reviews {
-    position: relative;
+    @apply relative;
 
     .card-custom-customers-reviews-inner {
       background: #200a52;
@@ -534,9 +457,7 @@
       }
 
       .text-desc-div {
-        padding: 0;
-        margin: 0;
-        position: relative;
+        @apply p-0 m-0 relative;
 
         p {
           font-size: 16px;
@@ -558,25 +479,20 @@
 
 .custom-resources-section {
   padding: 90px 0;
-  margin: 0;
-  position: relative;
-  background: #f9f8fb;
+  @apply bg-custom-color3 relative m-0;
 
   .heading-div {
     max-width: 805px;
 
     h2 {
-      font-weight: 400;
       font-size: 50px;
       line-height: 1.3;
-      text-align: center;
-      color: #181a1d;
-      display: block;
+      @apply block text-custom-color2 text-center font-normal;
     }
   }
 
   .card-custom-resources {
-    position: relative;
+    @apply relative;
 
     .card-custom-resources-inner {
       background-color: #200a52;
@@ -591,29 +507,20 @@
       background-repeat: no-repeat;
 
       .card-custom-top {
-        padding: 0;
-        margin: 0 0 0 0;
-        position: relative;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
+        @apply p-0 m-0 relative flex items-center flex-wrap w-full;
 
         h6 {
-          font-weight: 700;
           font-size: 15px;
           line-height: 1.5;
           margin: 0 0 15px 0;
           letter-spacing: 2.06897px;
-          color: #fff;
+          @apply text-white font-bold;
         }
 
         h3 {
-          font-weight: normal;
           font-size: 28px;
           line-height: 1.5;
-          color: #fff;
-          display: block;
+          @apply text-white block font-normal;
 
           .link {
             color: inherit;
@@ -631,41 +538,35 @@
   }
 
   .btn-div {
-    margin: 0 0 0 0;
     padding: 10px 0 0 0;
+    @apply m-0;
   }
 }
 
 .client-product-section {
   padding: 100px 0 76px 0;
-  margin: 0;
-  position: relative;
+  @apply m-0 relative;
 
   .card-client-product {
     .card-client-product-inner {
-      padding: 0;
-      margin: 0;
-      position: relative;
-      display: flex;
-      align-items: center;
-      height: 100%;
+      @apply p-0 m-0 relative flex items-center justify-center h-full;
     }
 
     &.left-justify {
       .card-client-product-inner {
-        justify-content: flex-start;
+        @apply justify-start;
       }
     }
 
     &.center-justify {
       .card-client-product-inner {
-        justify-content: center;
+        @apply justify-center;
       }
     }
 
     &.right-justify {
       .card-client-product-inner {
-        justify-content: flex-end;
+        @apply justify-end;
       }
     }
   }
@@ -681,9 +582,8 @@
     padding-bottom: 330px;
 
     .banner-div {
-      padding: 0;
-      margin: 0;
       min-height: auto;
+      @apply p-0 m-0;
     }
 
     .content-banner-root {
@@ -702,7 +602,7 @@
           margin: 0 0 10px 0;
 
           .span-color {
-            display: inline-block;
+            @apply inline-block;
           }
         }
 
@@ -734,7 +634,7 @@
     }
 
     .btn-div {
-      padding: 0 0 0 0;
+      @apply p-0;
     }
   }
 
@@ -752,7 +652,7 @@
 
       .card-custom-calculate {
         .card-custom-calculate-inner {
-          padding: 0;
+          @apply p-0;
 
           .form-calculate-div {
             .form-group {
@@ -770,11 +670,11 @@
 
       .card-custom-save {
         .card-custom-save-inner {
-          padding: 0 0 0 0;
+          @apply p-0;
 
           .card-white-rounded {
             padding: 30px 20px 60px 19px;
-            text-align: center;
+            @apply text-center;
 
             h2.big-text {
               font-size: 60px;
@@ -782,7 +682,7 @@
           }
 
           .btn-up-div {
-            justify-content: center;
+            @apply justify-center;
 
             .btn.btn-primary.btn-big {
               left: auto;
@@ -795,7 +695,7 @@
 
   .custom-section-02 {
     padding: 70px 0 40px 0;
-    background: #f9f8fb;
+    @apply bg-custom-color3;
 
     .heading-div {
       margin-bottom: 30px;
@@ -812,19 +712,19 @@
     }
 
     .card-custom-product-money {
-      position: relative;
+      @apply relative;
 
       .card-custom-painless-inner {
-        background-color: #fff;
         border-radius: 16px;
         padding: 29px 4px 24px 4px;
+        @apply bg-white;
       }
     }
   }
 
   .custom-section-03 {
     padding: 90px 0 30px 0;
-    background: #fff;
+    @apply bg-white;
 
     .heading-div {
       margin-bottom: 20px;
@@ -857,9 +757,7 @@
 
       h2 {
         font-size: 30px;
-        text-align: left;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        @apply justify-start text-left flex-nowrap;
       }
     }
 
@@ -878,8 +776,8 @@
               width: 36px;
 
               .object-contain {
-                object-fit: contain;
                 width: 36px;
+                object-fit: contain;
               }
             }
           }
@@ -918,8 +816,8 @@
         width: 100%;
 
         .card-client-product-inner {
-          justify-content: flex-start;
           margin-bottom: 30px;
+          @apply justify-start;
         }
       }
 
@@ -932,7 +830,7 @@
         }
 
         .card-client-product-inner {
-          justify-content: flex-start;
+          @apply justify-start;
         }
       }
 
@@ -956,8 +854,7 @@
     background-position: bottom;
 
     .banner-div {
-      padding: 0;
-      margin: 0;
+      @apply p-0 m-0;
       min-height: auto;
     }
 
@@ -1033,7 +930,7 @@
 
       .card-custom-calculate {
         .card-custom-calculate-inner {
-          padding: 0;
+          @apply p-0;
 
           .form-calculate-div {
             .form-group {
@@ -1061,7 +958,7 @@
           }
 
           .btn-up-div {
-            justify-content: center;
+            @apply justify-center;
 
             .btn.btn-primary.btn-big {
               left: auto;
@@ -1091,7 +988,7 @@
     }
 
     .card-custom-product-money {
-      position: relative;
+      @apply relative;
 
       .card-custom-painless-inner {
         .title-div {
@@ -1150,7 +1047,7 @@
 
       h2 {
         font-size: 30px;
-        justify-content: center;
+        @apply justify-center;
       }
     }
 
@@ -1172,16 +1069,15 @@
               width: 36px;
 
               .object-contain {
-                object-fit: contain;
                 width: 36px;
+                object-fit: contain;
               }
             }
           }
 
           .img-right-div {
-            width: 100%;
             height: 40px;
-            justify-content: flex-start;
+            @apply justify-start w-full;
           }
         }
 
@@ -1194,7 +1090,7 @@
       }
 
       .btn-div {
-        padding: 0;
+        @apply p-0;
       }
     }
   }

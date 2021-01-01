@@ -3,20 +3,30 @@
   background: #fff url(../images/background/home-banner.svg) no-repeat;
   min-height: 700px;
   z-index: 999;
-  @apply relative m-0 bg-cover bg-bottom;
+  background-position: bottom;
+  background-size: cover;
+  margin: 0px;
+  position: relative;
 }
 
 .main-banner-section .banner-div {
   padding: 70px 0;
   min-height: calc(100vh - 100px);
   z-index: 99;
-  @apply relative m-0 h-auto;
+  height: auto;
+  margin: 0px;
+  position: relative;
 }
 
 .main-banner-section .content-banner-root {
   padding: 110px 0 50px 0;
   height: inherit;
-  @apply relative m-0 flex items-center justify-center w-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  position: relative;
+  width: 100%;
 }
 
 .main-banner-section .content-banner-root .text-content {
@@ -30,31 +40,51 @@
   line-height: 1.5;
   letter-spacing: 0.1em;
   margin: 0 0 5px 0;
-  @apply font-bold text-center uppercase text-blue;
+  font-weight: 700;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(82, 48, 162, var(--tw-text-opacity));
+  text-transform: uppercase;
 }
 
 .main-banner-section .content-banner-root .text-content h1 {
   font-size: 58px;
   line-height: 1.3;
   margin: 0 0 5px 0;
-  @apply text-custom-color2 text-center font-normal;
+  font-weight: 400;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(24, 26, 29, var(--tw-text-opacity));
 }
 
 .main-banner-section .content-banner-root .text-content h1 .span-color {
-  @apply text-green font-bold block;
+  display: block;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(68, 224, 183, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .main-banner-section .content-banner-root .text-content h1 .span-color {
+  display: block;
 }
 
 .main-banner-section .content-banner-root .text-content p {
   font-size: 21px;
   line-height: 35px;
   margin: 0 0 10px 0;
-  @apply text-custom-color2 font-normal text-center not-italic;
+  font-weight: 400;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(24, 26, 29, var(--tw-text-opacity));
+  font-style: normal;
 }
 
 .main-banner-section .content-banner-root .text-content .btn-div {
   margin: 30px 0 0 0;
   font-family: "Typo Grotesk", sans-serif;
-  @apply flex flex-wrap justify-center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-banner-section .content-banner-root .block {
@@ -63,7 +93,10 @@
 
 .custom-section-01 {
   padding: 90px 0;
-  @apply m-0 relative bg-custom-color3;
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 248, 251, var(--tw-bg-opacity));
+  margin: 0px;
+  position: relative;
 }
 
 .custom-section-01 .heading-div {
@@ -73,41 +106,65 @@
 .custom-section-01 .heading-div h2 {
   font-size: 50px;
   line-height: 1.3;
-  @apply block text-custom-color2 text-center font-normal;
+  display: block;
+  font-weight: 400;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(24, 26, 29, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .custom-section-01 .heading-div h2 {
+  display: block;
 }
 
 .custom-section-01 .card-custom-painless {
-  @apply relative;
+  position: relative;
 }
 
 .custom-section-01 .card-custom-painless .card-custom-painless-inner .img-div {
   min-height: 180px;
-  @apply justify-center;
+  justify-content: center;
 }
 
 .custom-section-01 .card-custom-painless .card-custom-painless-inner .text-div {
-  @apply p-0 m-0 relative;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
 
 .custom-section-01 .card-custom-painless .card-custom-painless-inner .text-div h4 {
   font-size: 25px;
   line-height: 1.3;
   margin: 0 0 5px 0;
-  @apply text-blue-dark text-center font-bold;
+  font-weight: 700;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(32, 10, 82, var(--tw-text-opacity));
 }
 
 .custom-section-01 .card-custom-painless .card-custom-painless-inner .text-div p {
-  @apply text-custom-color5 text-center block m-0 text-base;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0px;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(137, 138, 141, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .custom-section-01 .card-custom-painless .card-custom-painless-inner .text-div p {
+  display: block;
 }
 
 .custom-section-01 .btn-div {
   padding: 10px 0 0 0;
-  @apply m-0;
+  margin: 0px;
 }
 
 .custom-section-02 {
   padding: 90px 0 40px 0;
-  @apply relative m-0;
+  margin: 0px;
+  position: relative;
 }
 
 .custom-section-02 .heading-div {
@@ -119,64 +176,99 @@
   font-size: 50px;
   line-height: 1.3;
   margin: 0 0 15px 0;
-  @apply text-custom-color2 text-center font-normal block;
+  display: block;
+  font-weight: 400;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(24, 26, 29, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .custom-section-02 .heading-div h2 {
+  display: block;
 }
 
 .custom-section-02 .heading-div p {
   font-size: 21px;
   line-height: 1.4;
-  @apply text-custom-color2 text-center block;
+  display: block;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(24, 26, 29, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .custom-section-02 .heading-div p {
+  display: block;
 }
 
 .custom-section-02 .card-custom-product-money {
-  @apply relative;
+  position: relative;
 }
 
 .custom-section-02 .card-custom-product-money .card-custom-painless-inner .title-div {
   margin: 0 0 15px 0;
-  @apply p-0;
+  padding: 0px;
 }
 
 .custom-section-02 .card-custom-product-money .card-custom-painless-inner .title-div h3 {
   font-size: 25px;
   line-height: 1.3;
   margin: 0 0 5px 0;
-  @apply text-blue-dark text-center font-bold;
+  font-weight: 700;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(32, 10, 82, var(--tw-text-opacity));
 }
 
 .custom-section-02 .card-custom-product-money .card-custom-painless-inner .img-div {
-  @apply justify-center;
+  justify-content: center;
   min-height: 180px;
 }
 
 .custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div {
-  @apply p-0 m-0 relative;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
 
 .custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div p {
   font-size: 16px;
   line-height: 1.4;
   margin: 0 0 10px 0;
-  @apply block text-custom-color4 text-center;
+  display: block;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(79, 81, 84, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div p {
+  display: block;
 }
 
 .custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div .link-div {
-  @apply flex flex-wrap justify-center w-full;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div .link-div .link {
-  -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  @apply text-green text-center text-base font-bold;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(68, 224, 183, var(--tw-text-opacity));
 }
 
 .custom-section-02 .card-custom-product-money .card-custom-painless-inner .text-div .link-div .link:hover {
-  @apply text-custom-color4;
+  --tw-text-opacity: 1;
+  color: rgba(79, 81, 84, var(--tw-text-opacity));
 }
 
 .custom-section-02 .btn-div {
   padding: 10px 0 0 0;
-  @apply m-0;
+  margin: 0px;
 }
 
 .custom-section-03 {
@@ -184,7 +276,8 @@
   background: url(../images/background/bg-pattern-01.svg) no-repeat;
   background-size: 450px 590px;
   background-position: left bottom;
-  @apply m-0 relative;
+  margin: 0px;
+  position: relative;
 }
 
 .custom-section-03 .heading-div {
@@ -194,60 +287,93 @@
 .custom-section-03 .heading-div h2 {
   font-size: 50px;
   line-height: 1.3;
-  @apply text-custom-color2 block text-center font-normal;
+  display: block;
+  font-weight: 400;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(24, 26, 29, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .custom-section-03 .heading-div h2 {
+  display: block;
 }
 
 .custom-section-03 .card-custom-approve {
-  @apply relative;
+  position: relative;
 }
 
 .custom-section-03 .card-custom-approve .card-custom-approve-inner .img-div {
   min-height: 180px;
-  @apply justify-center;
+  justify-content: center;
 }
 
 .custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div {
-  @apply p-0 m-0 relative;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
 
 .custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div h4 {
   font-size: 25px;
   line-height: 1.4;
   margin: 0 0 8px 0;
-  @apply text-center text-blue-dark font-bold;
+  font-weight: 700;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(32, 10, 82, var(--tw-text-opacity));
 }
 
 .custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div p {
-  @apply block m-0 text-center text-custom-color4 text-base;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0px;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(79, 81, 84, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div p {
+  display: block;
 }
 
 .custom-section-03 .btn-div {
   padding: 10px 0 0 0;
-  @apply m-0;
+  margin: 0px;
 }
 
 .calculate-custom-section {
   padding: 80px 0;
-  @apply m-0 relative;
+  margin: 0px;
+  position: relative;
 }
 
 .calculate-custom-section .calculate-custom-div {
   padding: 60px;
   border-radius: 16px;
-  @apply m-0 relative bg-custom-color3;
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 248, 251, var(--tw-bg-opacity));
+  margin: 0px;
+  position: relative;
 }
 
 .calculate-custom-section .calculate-custom-div .center-container {
   max-width: 1000px;
   margin: 0 auto;
-  @apply w-full;
+  width: 100%;
 }
 
 .calculate-custom-section .calculate-custom-div .heading-div h2 {
   font-size: 36px;
   line-height: 1.3;
   margin: 0 0 10px 0;
-  @apply block text-custom-color2;
+  display: block;
+  --tw-text-opacity: 1;
+  color: rgba(24, 26, 29, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .calculate-custom-section .calculate-custom-div .heading-div h2 {
+  display: block;
 }
 
 .calculate-custom-section .calculate-custom-div .card-custom-calculate .card-custom-calculate-inner {
@@ -255,21 +381,36 @@
 }
 
 .calculate-custom-section .calculate-custom-div .card-custom-calculate .form-calculate-div .form-calculate-box {
-  @apply p-0 m-0 relative;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
 
 .calculate-custom-section .calculate-custom-div .card-custom-calculate .form-calculate-div .form-calculate-box p {
   font-size: 12px;
   line-height: 1.4;
   margin: 0 0 5px 0;
-  @apply block text-blue-light font-bold;
+  display: block;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(105, 72, 183, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .calculate-custom-section .calculate-custom-div .card-custom-calculate .form-calculate-div .form-calculate-box p {
+  display: block;
 }
 
 .calculate-custom-section .calculate-custom-div .card-custom-calculate .form-calculate-div .form-calculate-box .text-number h3 {
   font-size: 32px;
   line-height: 1.2;
   color: #254254;
-  @apply block relative font-bold;
+  display: block;
+  font-weight: 700;
+  position: relative;
+}
+
+.main-banner-section .content-banner-root .calculate-custom-section .calculate-custom-div .card-custom-calculate .form-calculate-div .form-calculate-box .text-number h3 {
+  display: block;
 }
 
 .calculate-custom-section .calculate-custom-div .card-custom-calculate .form-calculate-div .form-calculate-box .text-number h3 sup {
@@ -297,7 +438,7 @@
 }
 
 .calculate-custom-section .calculate-custom-div .card-custom-calculate .form-calculate-div .form-group .form-control-row {
-  @apply relative;
+  position: relative;
 }
 
 .calculate-custom-section .calculate-custom-div .card-custom-calculate .form-calculate-div .form-group .form-control-row .text-right-per {
@@ -342,7 +483,7 @@
   min-height: 56px;
   top: -28px;
   left: 40px;
-  @apply relative;
+  position: relative;
 }
 
 .customers-reviews-section {
@@ -363,14 +504,9 @@
   line-height: 1.3;
   text-align: center;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .customers-reviews-section .heading-div h2 .img-icon {
@@ -378,13 +514,12 @@
 }
 
 .customers-reviews-section .card-custom-customers-reviews {
-  @apply relative;
+  position: relative;
 }
 
 .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner {
   background: #200a52;
-  -webkit-box-shadow: 0 40px 76px -29px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 40px 76px -29px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 40px 76px -29px rgba(0, 0, 0, 0.07);
   border-radius: 16px;
   padding: 35px 40px;
   color: #fff;
@@ -394,26 +529,16 @@
   padding: 0;
   margin: 0 0 24px 0;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .card-custom-top .left-text-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
   width: calc(100% - 100px);
 }
 
@@ -451,13 +576,13 @@
   margin: 0;
   position: relative;
   width: 100px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .text-desc-div {
-  @apply p-0 m-0 relative;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
 
 .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .text-desc-div p {
@@ -476,7 +601,10 @@
 
 .custom-resources-section {
   padding: 90px 0;
-  @apply bg-custom-color3 relative m-0;
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 248, 251, var(--tw-bg-opacity));
+  margin: 0px;
+  position: relative;
 }
 
 .custom-resources-section .heading-div {
@@ -486,30 +614,42 @@
 .custom-resources-section .heading-div h2 {
   font-size: 50px;
   line-height: 1.3;
-  @apply block text-custom-color2 text-center font-normal;
+  display: block;
+  font-weight: 400;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(24, 26, 29, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .custom-resources-section .heading-div h2 {
+  display: block;
 }
 
 .custom-resources-section .card-custom-resources {
-  @apply relative;
+  position: relative;
 }
 
 .custom-resources-section .card-custom-resources .card-custom-resources-inner {
   background-color: #200a52;
-  -webkit-box-shadow: 0 40px 76px -29px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 40px 76px -29px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 40px 76px -29px rgba(0, 0, 0, 0.07);
   border-radius: 27px;
   padding: 35px 40px;
   color: #fff;
   min-height: 300px;
   background-size: cover;
   background-position: center;
-  -webkit-transition: all 0.8s;
   transition: all 0.8s;
   background-repeat: no-repeat;
 }
 
 .custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top {
-  @apply p-0 m-0 relative flex items-center flex-wrap w-full;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
 }
 
 .custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top h6 {
@@ -517,13 +657,22 @@
   line-height: 1.5;
   margin: 0 0 15px 0;
   letter-spacing: 2.06897px;
-  @apply text-white font-bold;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top h3 {
   font-size: 28px;
   line-height: 1.5;
-  @apply text-white block font-normal;
+  display: block;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.main-banner-section .content-banner-root .custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top h3 {
+  display: block;
 }
 
 .custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top h3 .link {
@@ -539,28 +688,35 @@
 
 .custom-resources-section .btn-div {
   padding: 10px 0 0 0;
-  @apply m-0;
+  margin: 0px;
 }
 
 .client-product-section {
   padding: 100px 0 76px 0;
-  @apply m-0 relative;
+  margin: 0px;
+  position: relative;
 }
 
 .client-product-section .card-client-product .card-client-product-inner {
-  @apply p-0 m-0 relative flex items-center justify-center h-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
 
 .client-product-section .card-client-product.left-justify .card-client-product-inner {
-  @apply justify-start;
+  justify-content: flex-start;
 }
 
 .client-product-section .card-client-product.center-justify .card-client-product-inner {
-  @apply justify-center;
+  justify-content: center;
 }
 
 .client-product-section .card-client-product.right-justify .card-client-product-inner {
-  @apply justify-end;
+  justify-content: flex-end;
 }
 
 @media (max-width: 767px) {
@@ -572,180 +728,239 @@
     background-position: 0 calc(100% - 70px);
     padding-bottom: 330px;
   }
+
   .main-banner-section .banner-div {
     min-height: auto;
-    @apply p-0 m-0;
+    margin: 0px;
+    padding: 0px;
   }
+
   .main-banner-section .content-banner-root {
     padding: 50px 0 40px 0;
   }
+
   .main-banner-section .content-banner-root .text-content {
     padding: 0 8px;
   }
+
   .main-banner-section .content-banner-root .text-content h4 {
     font-size: 14px;
     margin: 0 0 10px 0;
   }
+
   .main-banner-section .content-banner-root .text-content h1 {
     font-size: 36px;
     margin: 0 0 10px 0;
   }
+
   .main-banner-section .content-banner-root .text-content h1 .span-color {
-    @apply inline-block;
+    display: inline-block;
   }
+
   .main-banner-section .content-banner-root .text-content p {
     font-size: 16px;
     margin: 0 0 10px 0;
   }
+
   .custom-section-01 {
     padding: 70px 0 60px 0;
   }
+
   .custom-section-01 .heading-div h2 {
     font-size: 30px;
   }
+
   .custom-section-01 .card-custom-painless .card-custom-painless-inner .text-div h4 {
     font-size: 21px;
   }
+
   .custom-section-01 .btn-div {
-    @apply p-0;
+    padding: 0px;
   }
+
   .calculate-custom-section {
     padding: 80px 0 40px 0;
   }
+
   .calculate-custom-section .calculate-custom-div {
     padding: 40px 20px 5px 20px;
   }
+
   .calculate-custom-section .calculate-custom-div .heading-div h2 {
     font-size: 26px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-calculate .card-custom-calculate-inner {
-    @apply p-0;
+    padding: 0px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-calculate .card-custom-calculate-inner .form-calculate-div .form-group.pr-4 {
     padding-right: 5px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-calculate .card-custom-calculate-inner .form-calculate-div .form-group.pl-4 {
     padding-left: 5px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-save .card-custom-save-inner {
-    @apply p-0;
+    padding: 0px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-save .card-custom-save-inner .card-white-rounded {
     padding: 30px 20px 60px 19px;
-    @apply text-center;
+    text-align: center;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-save .card-custom-save-inner .card-white-rounded h2.big-text {
     font-size: 60px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-save .card-custom-save-inner .btn-up-div {
-    @apply justify-center;
+    justify-content: center;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-save .card-custom-save-inner .btn-up-div .btn.btn-primary.btn-big {
     left: auto;
   }
+
   .custom-section-02 {
     padding: 70px 0 40px 0;
-    @apply bg-custom-color3;
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 248, 251, var(--tw-bg-opacity));
   }
+
   .custom-section-02 .heading-div {
     margin-bottom: 30px;
   }
+
   .custom-section-02 .heading-div h2 {
     font-size: 28px;
     margin: 0 0 15px 0;
   }
+
   .custom-section-02 .heading-div p {
     font-size: 16px;
     line-height: 1.6;
   }
+
   .custom-section-02 .card-custom-product-money {
-    @apply relative;
+    position: relative;
   }
+
   .custom-section-02 .card-custom-product-money .card-custom-painless-inner {
     border-radius: 16px;
     padding: 29px 4px 24px 4px;
-    @apply bg-white;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
+
   .custom-section-03 {
     padding: 90px 0 30px 0;
-    @apply bg-white;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   }
+
   .custom-section-03 .heading-div {
     margin-bottom: 20px;
   }
+
   .custom-section-03 .heading-div h2 {
     font-size: 30px;
   }
+
   .custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div h4 {
     font-size: 21px;
   }
+
   .custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div p {
     line-height: 1.6;
   }
+
   .customers-reviews-section {
     padding: 75px 0;
   }
+
   .customers-reviews-section .heading-div {
     margin-bottom: 40px;
   }
+
   .customers-reviews-section .heading-div h2 {
     font-size: 30px;
-    @apply justify-start text-left flex-nowrap;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: left;
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner {
     padding: 30px 25px;
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .card-custom-top .left-text-div .left-user-div {
     width: calc(100% - 47px);
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .card-custom-top .left-text-div .img-div {
     margin: 0 11px 0 0;
     width: 36px;
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .card-custom-top .left-text-div .img-div .object-contain {
     width: 36px;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
+
   .custom-resources-section {
     padding: 70px 0;
   }
+
   .custom-resources-section .heading-div {
     margin-bottom: 50px;
   }
+
   .custom-resources-section .heading-div h2 {
     font-size: 30px;
   }
+
   .custom-resources-section .card-custom-resources .card-custom-resources-inner {
     padding: 30px 35px;
   }
+
   .client-product-section {
     padding: 80px 0 56px 0;
   }
+
   .client-product-section .card-client-product .img-fluid {
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
+
   .client-product-section .card-client-product.order-01 {
     width: 100%;
   }
+
   .client-product-section .card-client-product.order-01 .card-client-product-inner {
     margin-bottom: 30px;
-    @apply justify-start;
+    justify-content: flex-start;
   }
+
   .client-product-section .card-client-product.order-02 {
     width: 50%;
   }
+
   .client-product-section .card-client-product.order-02 .img-fluid {
     width: 100%;
     max-width: 155px;
   }
+
   .client-product-section .card-client-product.order-02 .card-client-product-inner {
-    @apply justify-start;
+    justify-content: flex-start;
   }
+
   .client-product-section .card-client-product.order-03 {
     width: 50%;
   }
+
   .client-product-section .card-client-product.order-03 .img-fluid {
     width: 100%;
     max-width: 155px;
@@ -759,189 +974,247 @@
     background-size: contain;
     background-position: bottom;
   }
+
   .main-banner-section .banner-div {
-    @apply p-0 m-0;
+    margin: 0px;
+    padding: 0px;
     min-height: auto;
   }
+
   .main-banner-section .content-banner-root {
     padding: 80px 0 40px 0;
   }
+
   .main-banner-section .content-banner-root .text-content {
     padding: 0 8px;
   }
+
   .main-banner-section .content-banner-root .text-content h4 {
     font-size: 14px;
     margin: 0 0 10px 0;
   }
+
   .main-banner-section .content-banner-root .text-content h1 {
     font-size: 36px;
     margin: 0 0 10px 0;
   }
+
   .main-banner-section .content-banner-root .text-content h1 .span-color {
     display: inline-block;
   }
+
   .main-banner-section .content-banner-root .text-content p {
     font-size: 16px;
     margin: 0 0 10px 0;
   }
+
   .custom-section-01 {
     padding: 70px 0 60px 0;
   }
+
   .custom-section-01 .heading-div {
     max-width: 500px;
   }
+
   .custom-section-01 .heading-div h2 {
     font-size: 30px;
   }
+
   .custom-section-01 .card-custom-painless .card-custom-painless-inner .text-div h4 {
     font-size: 18px;
   }
+
   .custom-section-01 .card-custom-painless .card-custom-painless-inner .text-div p {
     font-size: 14px;
   }
+
   .custom-section-01 .btn-div {
     padding: 0 0 0 0;
   }
+
   .calculate-custom-section {
     padding: 80px 0 40px 0;
   }
+
   .calculate-custom-section .calculate-custom-div {
     padding: 40px 20px 5px 20px;
   }
+
   .calculate-custom-section .calculate-custom-div .heading-div h2 {
     font-size: 26px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-calculate .card-custom-calculate-inner {
-    @apply p-0;
+    padding: 0px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-calculate .card-custom-calculate-inner .form-calculate-div .form-group.pr-4 {
     padding-right: 5px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-calculate .card-custom-calculate-inner .form-calculate-div .form-group.pl-4 {
     padding-left: 5px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-save .card-custom-save-inner .card-white-rounded {
     padding: 30px 20px 60px 19px;
     text-align: center;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-save .card-custom-save-inner .card-white-rounded h2.big-text {
     font-size: 60px;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-save .card-custom-save-inner .btn-up-div {
-    @apply justify-center;
+    justify-content: center;
   }
+
   .calculate-custom-section .calculate-custom-div .card-custom-save .card-custom-save-inner .btn-up-div .btn.btn-primary.btn-big {
     left: auto;
   }
+
   .custom-section-02 {
     padding: 70px 0 30px 0;
   }
+
   .custom-section-02 .heading-div {
     margin-bottom: 30px;
     max-width: 500px;
   }
+
   .custom-section-02 .heading-div h2 {
     font-size: 30px;
     margin: 0 0 15px 0;
   }
+
   .custom-section-02 .heading-div p {
     font-size: 16px;
     line-height: 1.6;
   }
+
   .custom-section-02 .card-custom-product-money {
-    @apply relative;
+    position: relative;
   }
+
   .custom-section-02 .card-custom-product-money .card-custom-painless-inner .title-div h3 {
     font-size: 18px;
   }
+
   .custom-section-02 .card-custom-product-money .card-custom-painless-inner .title-div p {
     font-size: 14px;
   }
+
   .custom-section-02 .card-custom-product-money .card-custom-painless-inner .img-div {
     min-height: 140px;
   }
+
   .custom-section-02 .card-custom-product-money .card-custom-painless-inner .img-div .object-contain {
     width: 140px;
   }
+
   .custom-section-03 {
     padding: 30px 0 30px 0;
     background: #fff;
   }
+
   .custom-section-03 .heading-div {
     margin-bottom: 20px;
   }
+
   .custom-section-03 .heading-div h2 {
     font-size: 30px;
   }
+
   .custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div h4 {
     font-size: 21px;
   }
+
   .custom-section-03 .card-custom-approve .card-custom-approve-inner .text-div p {
     line-height: 1.6;
   }
+
   .customers-reviews-section {
     padding: 75px 0;
   }
+
   .customers-reviews-section .heading-div {
     margin-bottom: 50px;
   }
+
   .customers-reviews-section .heading-div h2 {
     font-size: 30px;
-    @apply justify-center;
+    justify-content: center;
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner {
     padding: 25px 20px;
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .card-custom-top .left-text-div {
     width: 100%;
     margin: 0 0 30px 0;
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .card-custom-top .left-text-div .left-user-div {
     width: calc(100% - 47px);
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .card-custom-top .left-text-div .img-div {
     margin: 0 11px 0 0;
     width: 36px;
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .card-custom-top .left-text-div .img-div .object-contain {
     width: 36px;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .card-custom-top .img-right-div {
     height: 40px;
-    @apply justify-start w-full;
+    justify-content: flex-start;
+    width: 100%;
   }
+
   .customers-reviews-section .card-custom-customers-reviews .card-custom-customers-reviews-inner .text-desc-div p {
     font-size: 14px;
     line-height: 24px;
   }
+
   .customers-reviews-section .card-custom-customers-reviews .btn-div {
-    @apply p-0;
+    padding: 0px;
   }
+
   .custom-resources-section {
     padding: 70px 0;
   }
+
   .custom-resources-section .heading-div {
     margin-bottom: 50px;
   }
+
   .custom-resources-section .heading-div h2 {
     font-size: 30px;
   }
+
   .custom-resources-section .card-custom-resources {
     margin-bottom: 0.8rem;
   }
+
   .custom-resources-section .card-custom-resources .card-custom-resources-inner {
     padding: 30px 20px;
     min-height: 260px;
   }
+
   .custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top h3 {
     font-size: 22px;
   }
+
   .custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top h6 {
     font-size: 12px;
     letter-spacing: 1px;
   }
+
   .custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top .middle-card-resources {
     min-height: 70px;
   }

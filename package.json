@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss build html/assets/css/source/tailwind.scss -o html/assets/css/tailwind.css; tailwindcss build html/assets/css/source/auto-refine-lease-style.css -o html/assets/css/auto-refine-lease-style.css",
+    "build:css": "tailwindcss build html/assets/css/source/tailwind.scss -o html/assets/css/tailwind.css; tailwindcss build html/assets/css/source/why-auto-approve-style.css -o html/assets/css/why-auto-approve-style.css",
     "watch": "watch \"npm run:css\" ./html"
   },
   "repository": {
