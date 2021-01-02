@@ -497,3 +497,61 @@
     }
   }
 }
+
+.blue-dark-root {
+  .form-div {
+    .input-box-effect {
+      .input-box-label {
+        .form-input {
+          border-bottom-color: #bdbebf;
+          @apply text-white;
+
+          &:focus {
+            background-color: transparent;
+          }
+
+          &:not(:placeholder-shown) + span {
+            color: rgba(255, 255, 255, 0.7);
+          }
+
+          &:focus + span {
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+
+        .label-text {
+          color: #e9eaea;
+        }
+      }
+    }
+
+    .upload-root-div {
+      .upload-box-div {
+        .upload-box-row {
+          background: transparent;
+
+          p {
+            color: #fff;
+          }
+
+          span.rounded-span {
+            color: #fff;
+            border: 1px solid #fff;
+            margin: 15px auto 8px auto;
+            max-width: 182px;
+          }
+        }
+      }
+    }
+
+    .btn-bottom-left-div {
+      .btn-secondary {
+        color: #5230a2;
+
+        .bg-custom-icon {
+          margin: 0 0 0 12px;
+        }
+      }
+    }
+  }
+}

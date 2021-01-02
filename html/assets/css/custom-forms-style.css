@@ -525,4 +525,48 @@
   text-align: center;
   color: #5230a2;
 }
+
+.blue-dark-root .form-div .input-box-effect .input-box-label .form-input {
+  border-bottom-color: #bdbebf;
+  @apply text-white;
+}
+
+.blue-dark-root .form-div .input-box-effect .input-box-label .form-input:focus {
+  background-color: transparent;
+}
+
+.blue-dark-root .form-div .input-box-effect .input-box-label .form-input:not(:placeholder-shown) + span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.blue-dark-root .form-div .input-box-effect .input-box-label .form-input:focus + span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.blue-dark-root .form-div .input-box-effect .input-box-label .label-text {
+  color: #e9eaea;
+}
+
+.blue-dark-root .form-div .upload-root-div .upload-box-div .upload-box-row {
+  background: transparent;
+}
+
+.blue-dark-root .form-div .upload-root-div .upload-box-div .upload-box-row p {
+  color: #fff;
+}
+
+.blue-dark-root .form-div .upload-root-div .upload-box-div .upload-box-row span.rounded-span {
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 15px auto 8px auto;
+  max-width: 182px;
+}
+
+.blue-dark-root .form-div .btn-bottom-left-div .btn-secondary {
+  color: #5230a2;
+}
+
+.blue-dark-root .form-div .btn-bottom-left-div .btn-secondary .bg-custom-icon {
+  margin: 0 0 0 12px;
+}
 /*# sourceMappingURL=custom-forms-style.css.map */

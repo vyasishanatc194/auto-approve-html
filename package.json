@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss build html/assets/css/source/tailwind.scss -o html/assets/css/tailwind.css; tailwindcss build html/assets/css/source/page-not-found-style.css -o html/assets/css/page-not-found-style.css",
+    "build:css": "tailwindcss build html/assets/css/source/tailwind.scss -o html/assets/css/tailwind.css; tailwindcss build html/assets/css/source/contact-us-style.css -o html/assets/css/contact-us-style.css",
     "watch": "watch \"npm run:css\" ./html"
   },
   "repository": {
