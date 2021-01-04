@@ -211,6 +211,8 @@
             @apply relative flex flex-wrap justify-between items-start;
 
             .bottom-or-left-div {
+              width: calc(100% - 140px);
+              
               p {
                 font-size: 14px;
                 line-height: 28px;

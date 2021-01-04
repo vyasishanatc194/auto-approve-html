@@ -13,8 +13,8 @@
 
 .main-half-banner-section .half-banner-div.auto-refinance-banner-img-01 {
   background: #fff url(../images/background/auto-refinance-banner02.svg) no-repeat;
-  background-size: contain;
-  background-position: calc(100% - 50px) 0;
+  background-size: 900px;
+  background-position: calc(100% - 50px) center;
 }
 
 .main-half-banner-section .half-banner-div.auto-refinance-banner-img-02 {
@@ -25,8 +25,8 @@
 
 .main-half-banner-section .half-banner-div.auto-refinance-banner-img-03 {
   background: #fff url(../images/background/auto-lease-purchase-banner02.svg) no-repeat;
-  background-size: contain;
-  background-position: 100% 0;
+  background-size: 900px;
+  background-position: calc(100% - 50px) center;
 }
 
 .main-half-banner-section .content-banner-root {
@@ -80,7 +80,7 @@
   max-width: 895px;
   padding: 0 0 20px 0;
   z-index: 2;
-  margin: 0 auto;
+  margin: 0 auto 15px auto;
   @apply relative;
 }
 
@@ -94,6 +94,7 @@
 .saving-today-section .saving-today-div {
   padding: 110px 50px 85px 50px;
   margin: 0 auto;
+  border-radius: 16px;
   @apply relative bg-custom-color3;
 }
 
@@ -157,8 +158,8 @@
 }
 
 .saving-today-section .saving-today-div.saving-pattern-div03::after {
-  bottom: 75px;
-  right: 55px;
+  bottom: 105px;
+  right: 155px;
 }
 
 .saving-today-section .saving-today-div.saving-pattern-div03 .saving-today-root::before {
@@ -166,6 +167,7 @@
   left: 100px;
   width: 44px;
   height: 55px;
+  opacity: 0;
 }
 
 .saving-today-section .saving-today-div .center-container {
@@ -202,9 +204,81 @@
   @apply bg-blue block absolute;
 }
 
+.saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .title-div {
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .title-div h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 5px 0;
+  @apply font-bold text-center text-blue-dark;
+}
+
+.saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .img-div {
+  min-height: 170px;
+  padding: 24px 0;
+  @apply justify-center mb-0;
+}
+
+.saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .text-div {
+  @apply relative p-0 mb-0;
+}
+
+.saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .text-div p {
+  font-size: 16px;
+  line-height: 27px;
+  margin: 0 0 10px 0;
+  @apply block text-center text-custom-color6;
+}
+
+.saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .text-div .link-div {
+  @apply flex justify-center flex-wrap w-full;
+}
+
+.saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .text-div .link-div .link {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  @apply text-green font-bold text-center text-base;
+}
+
+.saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .text-div .link-div .link:hover {
+  @apply text-custom-color4;
+}
+
 .saving-today-section .btn-div {
   z-index: 2;
   @apply relative;
+}
+
+.saving-today-section.saving-today-section-area-02 .heading-div {
+  padding: 0 0 50px 0;
+}
+
+.saving-today-section.saving-today-section-area-02 .heading-div p {
+  font-size: 21px;
+  line-height: 35px;
+  max-width: 715px;
+  margin: 0 auto;
+  @apply font-normal text-center block text-custom-color2;
+}
+
+.saving-today-section.saving-today-section-area-02 .saving-today-div {
+  padding-top: 85px;
+  padding-bottom: 20px;
+}
+
+.saving-today-section.saving-today-section-area-02 .saving-today-div.remove-pattern-div::before {
+  @apply hidden;
+}
+
+.saving-today-section.saving-today-section-area-02 .saving-today-div.remove-pattern-div::after {
+  @apply hidden;
+}
+
+.saving-today-section.saving-today-section-area-02 .saving-today-div.remove-pattern-div .saving-today-root::before {
+  @apply hidden;
 }
 
 .vehicle-protection-plan-section {
@@ -244,7 +318,7 @@
 }
 
 .vehicle-protection-plan-section .card-custom-vehicle-plan .card-custom-vehicle-plan-inner .title-div h3 {
-  font-size: 25px;
+  font-size: 24px;
   line-height: 1.4;
   margin: 0 0 5px 0;
   @apply font-bold text-center text-blue-dark;
@@ -320,6 +394,10 @@
   @apply flex justify-between flex-wrap bg-white;
 }
 
+.rpsm-section .card-custom-rpsm .card-custom-rpsm-inner .content-height-div {
+  min-height: 200px;
+}
+
 .rpsm-section .card-custom-rpsm .card-custom-rpsm-inner .title-div {
   width: calc(100% - 250px);
   padding: 0 20px 0 0;
@@ -357,27 +435,29 @@
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .main-half-banner-section .half-banner-div.auto-refinance-banner-img-01 {
-    background-position: right;
+    background-position: right center;
+    background-size: 800px;
   }
   .main-half-banner-section .half-banner-div.auto-refinance-banner-img-02 {
     background-position: 115% 0;
   }
   .main-half-banner-section .half-banner-div.auto-refinance-banner-img-03 {
-    background-position: 125% 0;
+    background-position: 125% center;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) and (min-width: 1025px) and (max-width: 1290px) {
   .main-half-banner-section .half-banner-div.auto-refinance-banner-img-01 {
-    background-position: 140% 0;
+    background-position: right center;
+    background-size: 700px;
   }
   .main-half-banner-section .half-banner-div.auto-refinance-banner-img-02 {
     background-position: 115% 25%;
-    background-size: 65%;
+    background-size: 60%;
   }
   .main-half-banner-section .half-banner-div.auto-refinance-banner-img-03 {
-    background-position: 125% 35%;
-    background-size: 70%;
+    background-position: 125% center;
+    background-size: 65%;
   }
 }
 
@@ -395,7 +475,8 @@
     padding-bottom: 330px;
   }
   .main-half-banner-section .half-banner-div.auto-refinance-banner-img-01 {
-    background-position: 0 calc(100% - 50px);
+    background-position: -15px calc(100% - 50px);
+    background-size: 420px;
   }
   .main-half-banner-section .half-banner-div.auto-refinance-banner-img-02 {
     background-position: 0 calc(100% - 50px);
@@ -403,6 +484,12 @@
   .main-half-banner-section .half-banner-div.auto-refinance-banner-img-03 {
     background-position: 80% calc(100% - 0%);
     background-size: 140%;
+  }
+  .main-half-banner-section .half-banner-div.auto-refinance-banner-img-03 .btn-primary.btn-primary-big {
+    font-size: 14px;
+  }
+  .main-half-banner-section .half-banner-div.auto-refinance-banner-img-03 .content-banner-root .text-content h1 {
+    font-size: 34px;
   }
   .main-half-banner-section .content-banner-root {
     padding: 50px 0 20px 0;
@@ -457,6 +544,13 @@
   .saving-today-section .card-custom-saving-today .card-custom-saving-today-inner {
     padding: 0 0 20px 0;
   }
+  .saving-today-section.saving-today-section-area-02 .heading-div {
+    padding: 0 0 40px 0;
+  }
+  .saving-today-section.saving-today-section-area-02 .heading-div p {
+    font-size: 16px;
+    line-height: 27px;
+  }
   .vehicle-protection-plan-section {
     padding: 70px 0 0 0;
   }
@@ -475,7 +569,7 @@
     @apply relative;
   }
   .vehicle-protection-plan-section .card-custom-vehicle-plan .card-custom-vehicle-plan-inner {
-    padding: 19px 4px 14px 4px;
+    padding: 4px 4px 4px 4px;
     @apply m-0;
   }
   .vehicle-protection-plan-section .card-custom-vehicle-plan .card-custom-vehicle-plan-inner .img-div {
@@ -497,6 +591,9 @@
   .rpsm-section .card-custom-rpsm .card-custom-rpsm-inner {
     padding: 40px 20px;
     @apply justify-center m-0;
+  }
+  .rpsm-section .card-custom-rpsm .card-custom-rpsm-inner .content-height-div {
+    min-height: 145px;
   }
   .rpsm-section .card-custom-rpsm .card-custom-rpsm-inner .title-div {
     padding: 0 0 30px 0;
@@ -618,6 +715,32 @@
     height: 8px;
     width: 8px;
   }
+  .saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .title-div h3 {
+    font-size: 18px;
+    min-height: 50px;
+  }
+  .saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .title-div p {
+    font-size: 14px;
+  }
+  .saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .img-div {
+    min-height: 140px;
+    padding: 0 0 15px 0;
+  }
+  .saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .img-div .object-contain {
+    width: 140px;
+    height: 80px;
+  }
+  .saving-today-section .card-custom-saving-today .card-custom-saving-today-inner .text-div p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .saving-today-section.saving-today-section-area-02 .heading-div {
+    padding: 0 0 40px 0;
+  }
+  .saving-today-section.saving-today-section-area-02 .heading-div p {
+    font-size: 16px;
+    line-height: 27px;
+  }
   .vehicle-protection-plan-section {
     padding: 70px 0 30px 0;
   }
@@ -667,6 +790,9 @@
   .rpsm-section .card-custom-rpsm .card-custom-rpsm-inner {
     padding: 40px 20px;
     @apply justify-center m-0;
+  }
+  .rpsm-section .card-custom-rpsm .card-custom-rpsm-inner .content-height-div {
+    min-height: 145px;
   }
   .rpsm-section .card-custom-rpsm .card-custom-rpsm-inner .title-div {
     padding: 0 0 30px 0;

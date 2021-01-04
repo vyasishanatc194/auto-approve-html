@@ -59,6 +59,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  white-space: nowrap;
 }
 
 .step-forms-main-root .step-forms-tabs-top .step-forms-tabs-top-row .step-forms-tabs-ul .step-forms-tabs-li {

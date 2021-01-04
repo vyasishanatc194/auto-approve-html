@@ -277,6 +277,10 @@
   position: relative;
 }
 
+.open-roles-section .open-roles-div .card-custom-open-roles .card-custom-open-roles-inner .right-title-div .bottom-or-div .bottom-or-left-div {
+  width: calc(100% - 140px);
+}
+
 .open-roles-section .open-roles-div .card-custom-open-roles .card-custom-open-roles-inner .right-title-div .bottom-or-div .bottom-or-left-div p {
   font-size: 14px;
   line-height: 28px;

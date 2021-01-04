@@ -1,32 +1,35 @@
 .blog-main-section {
-  margin: 0;
-  position: relative;
+  @apply m-0 relative;
 
   .blog-main-div {
     padding: 100px 0;
-    margin: 0;
-    position: relative;
+    @apply m-0 relative;
 
     .heading-div {
-      padding: 0;
       margin: 0 0 20px 0;
-      position: relative;
+      @apply p-0 relative;
 
       h1 {
-        font-weight: 400;
         font-size: 60px;
         line-height: 75px;
-        color: #181a1d;
-        margin: 0 0 30px 0;
-        padding: 0;
-        display: block;
+        @apply p-0 mb-2 block text-custom-color2 font-normal;
+      }
+
+      p {
+        font-size: 21px;
+        line-height: 35px;
+        @apply font-normal block text-custom-color2 mb-2;
+      }
+
+      .heading-div-top-inner {
+        margin: 0 0 80px 0;
       }
     }
 
     .filter-group-root-div {
       padding: 0 0 0 3px;
-      margin: 0 0 90px 0;
-      position: relative;
+      margin: 0 0 70px 0;
+      @apply relative;
     }
   }
 }
@@ -164,6 +167,63 @@
   }
 }
 
+.blog-pagination-bottom {
+  @apply p-0 mt-16 relative;
+
+  .blog-pagination-bottom-inner {
+    @apply p-0 m-0 relative flex flex-wrap items-center justify-between;
+
+    .blog-pagination-bottom-left {
+      @apply p-0 m-0 relative w-3/5;
+
+      .pagination-list-div {
+        @apply flex flex-wrap items-center;
+
+        .page-txt {
+          font-size: 21px;
+          line-height: 28px;
+          @apply text-custom-color6 font-bold;
+        }
+
+        .pagination-ul {
+          @apply flex flex-wrap items-center;
+
+          li {
+            font-size: 21px;
+            line-height: 28px;
+            @apply text-custom-color6;
+
+            a {
+              padding: 0 3px;
+              color: inherit;
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+            }
+
+            &.active {
+              @apply font-bold;
+            }
+          }
+        }
+      }
+    }
+
+    .blog-pagination-bottom-right {
+      @apply p-0 m-0 relative w-2/5;
+
+      .con-btn-div {
+        p {
+          font-size: 21px;
+          line-height: 35px;
+          margin: 0 25px 0 0;
+          @apply text-blue-dark font-bold;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .blog-main-section {
     .blog-main-div {
@@ -173,12 +233,21 @@
         h1 {
           font-size: 36px;
           line-height: 1.5;
-          margin: 0 0 25px 0;
+          margin: 0 0 8px 0;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 28px;
+        }
+
+        .heading-div-top-inner {
+          margin: 0 0 50px 0;
         }
       }
 
       .filter-group-root-div {
-        margin: 0 0 60px 0;
+        margin: 0 0 50px 0;
       }
     }
   }
@@ -228,6 +297,43 @@
       }
     }
   }
+
+  .blog-pagination-bottom {
+    .blog-pagination-bottom-inner {
+      .blog-pagination-bottom-left {
+        width: 100%;
+        margin: 0 0 20px 0;
+
+        .pagination-list-div {
+          .page-txt {
+            font-size: 18px;
+            line-height: 28px;
+          }
+
+          .pagination-ul {
+            li {
+              font-size: 18px;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+
+      .blog-pagination-bottom-right {
+        width: 100%;
+
+        .con-btn-div {
+          justify-content: flex-start;
+          
+          p {
+            font-size: 16px;
+            line-height: 28px;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -239,12 +345,16 @@
         h1 {
           font-size: 36px;
           line-height: 1.5;
-          margin: 0 0 25px 0;
+          margin: 0 0 15px 0;
+        }
+
+        .heading-div-top-inner {
+          margin: 0 0 50px 0;
         }
       }
 
       .filter-group-root-div {
-        margin: 0 0 60px 0;
+        margin: 0 0 50px 0;
       }
     }
   }
@@ -287,6 +397,18 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .blog-pagination-bottom {
+    .blog-pagination-bottom-inner {
+      .blog-pagination-bottom-left {
+        width: 50%;
+      }
+
+      .blog-pagination-bottom-right {
+        width: 50%;
       }
     }
   }
