@@ -555,3 +555,114 @@
     }
   }
 }
+
+.form-dollar-group-custom {
+  span.dollar-txt {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #44e0b7;
+    z-index: 2;
+
+    .txt {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        height: 15px;
+        width: 1px;
+        background: #44e0b7;
+        display: inline-block;
+        position: absolute;
+        right: -8px;
+      }
+    }
+  }
+
+  .input-box-label {
+    .label-text {
+      left: 28px;
+      top: -3px;
+    }
+
+    .form-input {
+      padding-left: 28px;
+      padding-bottom: 11px;
+    }
+
+    .form-input:not(:placeholder-shown) + span {
+      left: 0;
+      transform: translateY(-21px);
+      padding-bottom: 11px;
+    }
+
+    .form-input:focus + span {
+      left: 0;
+      transform: translateY(-21px);
+      padding-bottom: 11px;
+    }
+  }
+}
+
+.mdl-selectfield {
+  top: -2px;
+  width: 100%;
+
+  .mdl-selectfield__select {
+    border-bottom: 1px solid #bdbebf;
+  }
+
+  .mdl-selectfield__label {
+    color: #65676a;
+    font-size: 16px;
+    top: 16px;
+    width: 100%;
+  }
+
+  .material-icons {
+    top: -4px;
+    margin: 0 2px 0 0;
+    position: relative;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 11px;
+    width: 11px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='16px' height='10px' viewBox='0 0 16 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Edown-arrow%3C/title%3E%3Cg id='Page-3' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='down-arrow' fill='%2344E0B7'%3E%3Cpath d='M14.9237,0.626812 C14.1587,-0.138168 12.9145,-0.142088 12.1447,0.618054 L9.39223,3.33608 C8.60384,4.11459 7.3296,4.11058 6.54614,3.32711 L3.81127,0.592248 C3.04629,-0.172732 1.80212,-0.176654 1.03233,0.583488 C0.262545,1.34363 0.258649,2.57999 1.02363,3.34497 L6.49846,8.8198 C6.51862,8.84187 6.53938,8.8636 6.56075,8.88497 C6.87419,9.19841 7.26808,9.38408 7.67683,9.44177 C8.26666,9.52605 8.88781,9.34373 9.34304,8.8942 C9.36779,8.86977 9.39174,8.84484 9.4149,8.81946 L14.915,3.38829 C15.6848,2.62815 15.6887,1.39179 14.9237,0.626812 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  &.is-dirty {
+    top: -3px;
+
+    .mdl-selectfield__select {
+      padding: 4px 0 8px 0;
+      margin: -4px 0 0 0;
+      font-weight: 700;
+      color: #393b3f;
+    }
+
+    .material-icons {
+      top: -2px;
+    }
+  }
+
+  li.mdl-menu__item.mdl-js-ripple-effect:first-child {
+    display: none;
+  }
+
+  .mdl-menu__container {
+    display: none;
+  }
+
+  &.is-focused {
+    .mdl-menu__container {
+      display: block;
+    }
+  }
+}

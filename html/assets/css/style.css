@@ -112,8 +112,8 @@ body {
   -webkit-text-size-adjust: 100%;
   background-color: #fff;
   scroll-behavior: smooth;
-  /* font-family: "Typo Grotesk", "Ubuntu", sans-serif; */
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Typo Grotesk", "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
 }
 
 .wrapper {

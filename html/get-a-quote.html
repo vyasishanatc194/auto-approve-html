@@ -22,9 +22,9 @@
 <link href="assets/css/flatpickr.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/footer.css" media="all" rel="stylesheet" type="text/css" />
+<link href='assets/css/material.indigo-pink.min.css' media="all" rel="stylesheet" type="text/css" />
+<link href='assets/css/mdl-selectfield.min.css' media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/custom-forms-style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/select2.min.css" rel="stylesheet" />
-<link href="assets/css/select2-materials.css" rel="stylesheet" />
 <link href="assets/css/get-a-quote.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
@@ -119,8 +119,8 @@
                   <div class="step-forms-tabs-top">
                     <div class="step-forms-tabs-top-row">
 
-                      <ul class="step-forms-tabs-ul">
-                        <li class="step-forms-tabs-li active">
+                      <ul class="step-forms-tabs-ul" id="step-quote-forms-tabs">
+                        <li class="step-forms-tabs-li active" id="tabs-step-list-header01">
                           <div class="tabs-box">
                             <div class="tabs-box-icon">
                               <span class="rounded-span">
@@ -134,7 +134,7 @@
                           </div>
                         </li>
 
-                        <li class="step-forms-tabs-li">
+                        <li class="step-forms-tabs-li" id="tabs-step-list-header02">
                           <div class="tabs-box">
                             <div class="tabs-box-icon">
                               <span class="rounded-span">
@@ -148,7 +148,7 @@
                           </div>
                         </li>
 
-                        <li class="step-forms-tabs-li">
+                        <li class="step-forms-tabs-li" id="tabs-step-list-header03">
                           <div class="tabs-box">
                             <div class="tabs-box-icon">
                               <span class="rounded-span">
@@ -167,7 +167,7 @@
                   </div>
 
                   <div class="step-forms-tabs-body">
-                    <div class="step-forms-tabs-body-row">
+                    <div class="step-forms-tabs-body-row" id="quote-step01">
 
                       <div class="form-div">
                         <div class="row flex flex-wrap -mx-6">
@@ -245,16 +245,17 @@
                             </div>
                           </div>
 
-                          <div class="form-col w-full md:w-1/3 lg:w-1/3 px-6 mb-7">
-                            <div class="input-box-effect select-form-group">
-                              <select class="browser-default select2">
-                                <option value="" disabled selected>State</option>
+                          <div class="form-col w-full md:w-1/3 lg:w-1/3 px-6 mb-2">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                              <select class="mdl-selectfield__select" id="state_select01" name="state_select">
+                                <option disabled selected></option>
                                 <option value="1">California</option>
                                 <option value="2">Washington</option>
                               </select>
+                              <label class="mdl-selectfield__label" for="state_select01">State</label>
                             </div>
                           </div>
-
+                          
                           <div class="form-col w-full md:w-1/3 lg:w-1/3 px-6 mb-7">
                             <div class="input-box-effect">
                               <label class="input-box-label">
@@ -295,12 +296,266 @@
                             </div>
                           </div>
                           <div class="btn-bottom-right-div flex flex-wrap items-center">
-                            <a href="get-a-quote-step2.html" class="btn btn-primary btn-step btn-next">Next Step <span class="bg-custom-icon arrow-right-long white-icon"></span> </a>
+                            <a href="#" id="next-step-2" class="btn btn-primary btn-step btn-next">Next Step <span class="bg-custom-icon arrow-right-long white-icon"></span> </a>
                           </div>
                         </div>
 
                         <div class="bottom-text-div max-w-screen-sm mb-7">
                           <p>By entering your phone number, you consent to receiving calls and/or texts from Auto Approve by any method. Carrier charges may apply.</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="step-forms-tabs-body-row hidden" id="quote-step02">
+
+                      <div class="form-div">
+
+                        <div class="row flex flex-wrap -mx-6 sm:mb-6 mb-0">
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-2">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                              <select class="mdl-selectfield__select" id="vehicle_type01" name="vehicle_type">
+                                <option disabled selected></option>
+                                <option value="1">Option 01</option>
+                                <option value="2">Option 02</option>
+                                <option value="3">Option 03</option>
+                              </select>
+                              <label class="mdl-selectfield__label" for="vehicle_type01">Vehicle Type</label>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-2">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                              <select class="mdl-selectfield__select" id="year_select01" name="year_select">
+                                <option disabled selected></option>
+                                <option value="1">2020</option>
+                                <option value="2">2019</option>
+                                <option value="3">2018</option>
+                                <option value="4">2017</option>
+                                <option value="5">2016</option>
+                                <option value="6">2015</option>
+                              </select>
+                              <label class="mdl-selectfield__label" for="year_select01">Year</label>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-2">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                              <select class="mdl-selectfield__select" id="make_select01" name="make_select">
+                                <option disabled selected></option>
+                                <option value="1">Option 01</option>
+                                <option value="2">Option 02</option>
+                                <option value="3">Option 03</option>
+                              </select>
+                              <label class="mdl-selectfield__label" for="make_select01">Make</label>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-2">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                              <select class="mdl-selectfield__select" id="model_01" name="model_01">
+                                <option disabled selected></option>
+                                <option value="1">Option 01</option>
+                                <option value="2">Option 02</option>
+                                <option value="3">Option 03</option>
+                              </select>
+                              <label class="mdl-selectfield__label" for="model_01">Model</label>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text">VIN (optional)</span>
+                                <span class="border"></span>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text">Mileage (optional)</span>
+                                <span class="border"></span>
+                              </label>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="row flex flex-wrap -mx-6 mb-4">
+
+                          <div class="form-col w-full md:w-1/1 lg:w-1/1 px-6 mb-3">
+                            <div class="title-heading-div flex flex-wrap">
+                              <h4>LOAN INFORMATION </h4>
+                              <p>(your best guess is fine)</p>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect form-dollar-group-custom">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text">Current Payment</span>
+                                <span class="border"></span>
+                              </label>
+                              <span class="dollar-txt"> <span class="txt">$</span> </span>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect form-dollar-group-custom">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text">Current Interest Rate</span>
+                                <span class="border"></span>
+                              </label>
+                              <span class="dollar-txt"> <span class="txt">$</span> </span>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect form-dollar-group-custom">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text">Payoff Amount</span>
+                                <span class="border"></span>
+                              </label>
+                              <span class="dollar-txt"> <span class="txt">$</span> </span>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+                              <select class="mdl-selectfield__select" id="desired_team_01" name="desired_team">
+                                <option disabled selected></option>
+                                <option value="1">Option 01</option>
+                                <option value="2">Option 02</option>
+                                <option value="3">Option 03</option>
+                              </select>
+                              <label class="mdl-selectfield__label" for="desired_team_01">Desired Term</label>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="step-forms-footer-div">
+                        
+                        <div class="btn-bottom-div flex flex-wrap items-center justify-between mb-6 sm:mb-9">
+                          <div class="btn-bottom-left-div flex flex-wrap items-center mb-6 sm:mb-0">
+                            <a href="#" id="previous-step-1" class="btn btn-pre-back btn-step btn-previous min-h48"> <span class="bg-custom-icon arrow-left-long-blue"></span> Previous Step </a>
+                          </div>
+                          <div class="btn-bottom-right-div flex flex-wrap items-center">
+                            <a href="#" id="next-step-3" class="btn btn-primary btn-step btn-next min-h48">Next Step <span class="bg-custom-icon arrow-right-long white-icon"></span> </a>
+                          </div>
+                        </div>
+
+                        <div class="bottom-text-div max-w-screen-sm mb-7">
+                          <p>Don't see your vehicle listed? We refinance cars, trucks, SUVs, Motorcycles, RVs, Boats and ATVs. 
+                            <span class="block">Call us at <a href="tel:8443363365" class="link">(844) 238-3075</a> for a quote.</span>
+                          </p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="step-forms-tabs-body-row hidden" id="quote-step03">
+
+                      <div class="form-div">
+
+                        <div class="row flex flex-wrap -mx-6 sm:mb-6 mb-0">
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text">Employer</span>
+                                <span class="border"></span>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text">Job Title</span>
+                                <span class="border"></span>
+                              </label>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="row flex flex-wrap -mx-6 mb-4">
+
+                          <div class="form-col w-full md:w-1/1 lg:w-1/1 px-6 mb-3">
+                            <div class="title-heading-div flex flex-wrap">
+                              <h4>HOW LONG HAVE YOU BEEN AT THIS COMPANY?</h4>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text"># Years</span>
+                                <span class="border"></span>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text"># Months</span>
+                                <span class="border"></span>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect form-dollar-group-custom">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text">Monthly Income</span>
+                                <span class="border"></span>
+                              </label>
+                              <span class="dollar-txt"> <span class="txt">$</span> </span>
+                            </div>
+                          </div>
+
+                          <div class="form-col w-full md:w-1/2 lg:w-1/2 px-6 mb-7">
+                            <div class="input-box-effect">
+                              <label class="input-box-label">
+                                <input type="text" class="form-input" placeholder="&nbsp;">
+                                <span class="label-text">Social Security # (optional)</span>
+                                <span class="border"></span>
+                              </label>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="step-forms-footer-div">
+                        
+                        <div class="btn-bottom-div flex flex-wrap items-center justify-between mb-6 sm:mb-9">
+                          <div class="btn-bottom-left-div flex flex-wrap items-center mb-6 sm:mb-0">
+                            <a href="#" id="previous-step-2" class="btn btn-pre-back btn-step btn-previous min-h48"> <span class="bg-custom-icon arrow-left-long-blue"></span> Previous Step </a>
+                          </div>
+                          <div class="btn-bottom-right-div flex flex-wrap items-center">
+                            <a href="get-a-quote-congratulations.html" class="btn btn-primary btn-step btn-next min-h48">Get my instant quote </a>
+                          </div>
                         </div>
 
                       </div>
@@ -476,12 +731,15 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
+<script src='assets/js/material.min.js'></script>
+<script src='assets/js/mdl-selectfield.min.js'></script>
 <script src='assets/js/rangeslider.min.js'></script>
 <script src='assets/js/range-slider.js'></script>
 <script src="assets/js/jquery.collapsable.js"></script> 
 <script src="assets/js/footer.js"></script>
 <script src="assets/js/flatpickr.min.js"></script>
-<script src="assets/js/select2.full.js"></script>
+<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=hfoxbkjputzxmmblli5vhw" async="true"></script>
+<script src="assets/js/step-quote-custom.js"></script> 
 <script src="assets/js/custom.js"></script> 
 
 <script>
@@ -498,11 +756,6 @@
      $("#dob-click").click(function() {
       startdate.toggle()
     }); 
-
-    // select2
-    $( ".select2" ).select2({
-      theme: "material"
-    });
   });
 </script>
 
