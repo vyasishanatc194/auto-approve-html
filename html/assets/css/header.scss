@@ -506,6 +506,16 @@ header {
     .btn-primary {
       background: #44e0b7;
       color: #200a52;
+
+      &::after {
+        background-color: #47d0aa;
+      }
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 5px 10px 0 rgba(68, 224, 182, 0.3);
+        @apply text-blue-dark;
+      }
     }
 
     .menu-icon {

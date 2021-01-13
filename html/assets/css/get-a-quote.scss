@@ -1,3 +1,35 @@
+@keyframes animation-step {
+  0% {
+    opacity: 0;
+    transform: translateX(5vw);
+  }
+
+  50% {
+    opacity: 0.33;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animation-step-tabs01 {
+  0% {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+
+  50% {
+    opacity: 0.33;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .get-quote-main-section {
   margin: 0;
   position: relative;
@@ -12,6 +44,7 @@
     padding: 0;
     margin: 0 0 42px 0;
     position: relative;
+    animation: animation-step 0.6s linear;
 
     h1 {
       font-weight: 400;
@@ -44,6 +77,7 @@
     padding: 0;
     margin: 0 0 70px 0;
     position: relative;
+    animation: animation-step 0.6s linear;
 
     .step-forms-tabs-top-row {
       max-width: 470px;
@@ -60,7 +94,7 @@
         .step-forms-tabs-li {
           padding: 14px 27px;
           position: relative;
-
+          
           .tabs-box {
             display: flex;
             align-items: center;
@@ -99,6 +133,7 @@
               width: calc(100% - 48px);
               display: none;
               padding: 0 0 0 12px;
+              animation: animation-step-tabs01 0.6s linear;
 
               p {
                 font-weight: 400;
@@ -130,6 +165,8 @@
           }
 
           &.active {
+            animation: animation-step-tabs01 0.6s linear;
+            
             .tabs-box-icon {
               background-color: #5230a2;
             }
@@ -151,6 +188,10 @@
 
   .step-forms-tabs-body {
     position: relative;
+
+    .active-step {
+      animation: animation-step 0.6s linear;
+    }
 
     .title-heading-div {
       h4 {

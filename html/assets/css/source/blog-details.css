@@ -1,3 +1,63 @@
+@-webkit-keyframes arrow-small-move {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 30px;
+  }
+  51% {
+    background-position: -30px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes arrow-small-move {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 30px;
+  }
+  51% {
+    background-position: -30px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@-webkit-keyframes arrow-small-move02 {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 40px;
+  }
+  51% {
+    background-position: -40px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes arrow-small-move02 {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 40px;
+  }
+  51% {
+    background-position: -40px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
 .blog-detail-banner-section {
   margin: 0;
   position: relative;
@@ -125,6 +185,11 @@
   color: #5230a2;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+}
+
+.blog-detail-banner-section .blog-banner-card-root .blog-banner-card-inner .blog-banner-card-right .blog-banner-text-div .row-text .social-media-div .social-media-ul li .social-link:hover {
+  background: #44e0b7;
+  color: #200a52;
 }
 
 .blog-detail-banner-section.blog-detail-version-banner02 .blog-banner-card-root .blog-banner-card-inner .blog-banner-card-center {
@@ -273,6 +338,50 @@
   margin: 0 0 30px 0;
   position: relative;
   min-height: 84px;
+}
+
+.custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top .btn-bottom-div .link.link-btn {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top .btn-bottom-div .link.link-btn .arrow-right-icon {
+  background-image: none;
+}
+
+.custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top .btn-bottom-div .link.link-btn .arrow-right-icon::after {
+  content: "";
+  height: 28px;
+  width: 28px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='28px' height='28px' viewBox='0 0 28 28' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Earrow-right-icon%3C/title%3E%3Cg id='Page-2' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='arrow-right-icon' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpolygon id='Path' points='14 0 11.5325 2.4675 21.2975 12.25 0 12.25 0 15.75 21.2975 15.75 11.5325 25.5325 14 28 28 14'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top .btn-bottom-div .link.link-btn .video-icon {
+  background-image: none;
+}
+
+.custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top .btn-bottom-div .link.link-btn .video-icon::after {
+  content: "";
+  height: 38px;
+  width: 38px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='38px' height='38px' viewBox='0 0 38 38' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Evideo-icon%3C/title%3E%3Cg id='Page-2' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='video-icon'%3E%3Cg id='Group' stroke='%23FFFFFF' stroke-width='0.826087'%3E%3Ccircle id='Oval' cx='19' cy='19' r='18.587'%3E%3C/circle%3E%3C/g%3E%3Cg id='Group' transform='translate(13.000000, 10.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpolygon id='Path' points='14.8695789 8.58495 0 17.16989 7e-07 0'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top .btn-bottom-div .link.link-btn:hover .arrow-right-icon::after {
+  -webkit-animation: arrow-small-move 0.5s linear;
+          animation: arrow-small-move 0.5s linear;
+}
+
+.custom-resources-section .card-custom-resources .card-custom-resources-inner .card-custom-top .btn-bottom-div .link.link-btn:hover .video-icon::after {
+  -webkit-animation: arrow-small-move02 0.5s linear;
+          animation: arrow-small-move02 0.5s linear;
 }
 
 .custom-resources-section .btn-div {

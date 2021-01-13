@@ -1,3 +1,67 @@
+@-webkit-keyframes animation-step {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5vw);
+            transform: translateX(5vw);
+  }
+  50% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animation-step {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5vw);
+            transform: translateX(5vw);
+  }
+  50% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes animation-step-tabs01 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
+  }
+  50% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animation-step-tabs01 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
+  }
+  50% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .get-quote-main-section {
   margin: 0;
   position: relative;
@@ -13,6 +77,8 @@
   padding: 0;
   margin: 0 0 42px 0;
   position: relative;
+  -webkit-animation: animation-step 0.6s linear;
+          animation: animation-step 0.6s linear;
 }
 
 .get-quote-main-section .heading-div h1 {
@@ -43,6 +109,8 @@
   padding: 0;
   margin: 0 0 70px 0;
   position: relative;
+  -webkit-animation: animation-step 0.6s linear;
+          animation: animation-step 0.6s linear;
 }
 
 .step-forms-main-root .step-forms-tabs-top .step-forms-tabs-top-row {
@@ -123,6 +191,8 @@
   width: calc(100% - 48px);
   display: none;
   padding: 0 0 0 12px;
+  -webkit-animation: animation-step-tabs01 0.6s linear;
+          animation: animation-step-tabs01 0.6s linear;
 }
 
 .step-forms-main-root .step-forms-tabs-top .step-forms-tabs-top-row .step-forms-tabs-ul .step-forms-tabs-li .tabs-box .tabs-box-text p {
@@ -150,6 +220,11 @@
   display: none;
 }
 
+.step-forms-main-root .step-forms-tabs-top .step-forms-tabs-top-row .step-forms-tabs-ul .step-forms-tabs-li.active {
+  -webkit-animation: animation-step-tabs01 0.6s linear;
+          animation: animation-step-tabs01 0.6s linear;
+}
+
 .step-forms-main-root .step-forms-tabs-top .step-forms-tabs-top-row .step-forms-tabs-ul .step-forms-tabs-li.active .tabs-box-icon {
   background-color: #5230a2;
 }
@@ -164,6 +239,11 @@
 
 .step-forms-main-root .step-forms-tabs-body {
   position: relative;
+}
+
+.step-forms-main-root .step-forms-tabs-body .active-step {
+  -webkit-animation: animation-step 0.6s linear;
+          animation: animation-step 0.6s linear;
 }
 
 .step-forms-main-root .step-forms-tabs-body .title-heading-div h4 {
